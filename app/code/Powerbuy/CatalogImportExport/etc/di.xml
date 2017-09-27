@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Workaround Magento compiles Magento\Framework\Module\Setup\Context error-->
+    <type name="Powerbuy\CatalogImportExport\Helper\ProductAttribute">
+        <arguments>
+            <argument name="eavSetup" xsi:type="object">Powerbuy\CatalogImportExport\Eav\Setup\EavSetup</argument>
+        </arguments>
+    </type>
+    <virtualType name="Powerbuy\CatalogImportExport\Eav\Setup\EavSetup" type="Magento\Eav\Setup\EavSetup">
+        <arguments>
+            <argument name="setup" xsi:type="object">Powerbuy\CatalogImportExport\Setup\Module\DataSetup</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Powerbuy\CatalogImportExport\Setup\Module\DataSetup" type="Magento\Module\Setup\DataSetup">
+        <arguments>
+            <argument name="setup" xsi:type="object">Magento\Framework\Module\Setup\Context</argument>
+        </arguments>
+    </virtualType>
+
+    <!-- plugins -->
+    <type name="Magento\CatalogImportExport\Model\Import\Product">
+        <plugin name="powerbuy_catalogimportexport_magento_catalogimportexport_model_import_product" type="Powerbuy\CatalogImportExport\Plugin\Magento\CatalogImportExport\Model\Import\Product"/>
+    </type>
+</config>
