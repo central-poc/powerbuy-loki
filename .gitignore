@@ -7,6 +7,7 @@ atlassian*
 /nbproject
 /sitemap
 /.idea
+/.vscode
 /.gitattributes
 
 /app/code/Magento
