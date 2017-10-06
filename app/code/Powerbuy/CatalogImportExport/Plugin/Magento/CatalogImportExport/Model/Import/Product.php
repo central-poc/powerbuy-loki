@@ -55,17 +55,10 @@ class Product
 
     private function prepareAttributes($attributeString)
     {
-        $attributeItems = explode(',', $attributeString);
+        $attributeItems = str_getcsv($attributeString);
         $attributeItems = array_map(function($item){
-           $attr =  explode('=', $item);
-           if (count($attr) == 2) {
-               return [$attr[0], trim($attr[1])];
-           } else {
-               return [$attr[0], ''];
-           }
-
+            return explode('=', $item);
         }, $attributeItems);
-
 
         return array_filter($attributeItems, function($item){
             return count($item) == 2 && !empty($item[1]);
