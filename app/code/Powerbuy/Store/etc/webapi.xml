@@ -9,8 +9,8 @@
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
 
     <!-- Product Service -->
-    <route url="/V2/categories" method="GET">
-        <service class="Powerbuy\StorePickup\Api\StorePickupRepositoryInterface" method="get"/>
+    <route url="/V2/availablestock/:sku" method="GET">
+        <service class="Powerbuy\Store\Api\StoreRepositoryInterface" method="get"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>

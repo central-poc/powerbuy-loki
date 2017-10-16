@@ -42,6 +42,19 @@ class Product extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
         ;
 
         return $connection->fetchAll($select);
-        //return reset($productDetail);
+    }
+
+    public function getProductByBarcode($barcode, $branchId)
+    {
+        $connection = $this->getConnection();
+        $select = $connection
+           ->select()
+           ->from($this->getMainTable())
+           ->where('barcode = ?', $barcode)
+           ->where('store_id = ?', $branchId)
+        ;
+
+        $productPrice = $connection->fetchAll($select);
+        return reset($productPrice);
     }
 }

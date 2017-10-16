@@ -9,4 +9,7 @@
     <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
         <attribute code="by_store" type="Powerbuy\ProductMaster\Api\Data\ProductMasterInterface[]" />
     </extension_attributes>
+    <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
+        <attribute code="Promotion" type="Powerbuy\Promotion\Api\Data\PromotionInterface[]" />
+    </extension_attributes>
 </config>
