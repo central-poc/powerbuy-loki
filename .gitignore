@@ -61,6 +61,8 @@ atlassian*
 
 /vendor
 
+/generated
+
 CHANGELOG.md
 CONTRIBUTING.md
 COPYING.txt
@@ -68,14 +70,18 @@ Gruntfile.js.sample
 ISSUE_TEMPLATE.md
 LICENSE.txt
 LICENSE_AFL.txt
+PULL_REQUEST_TEMPLATE.md
 index.php
 nginx.conf.sample
 nginx.conf
 package.json.sample
 php.ini.sample
+auth.json.sample
+grunt-config.json.sample
 .htaccess
 .htaccess.sample
 .php_cs
+.php_cs.dist
 .travis.yml
 .user.ini
 !/composer.json
