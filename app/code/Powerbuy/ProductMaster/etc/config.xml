@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <powerbuy_productmaster>
+            <productmasterimport>
+                <product_status>2</product_status>
+                <online_store_id>139</online_store_id>
+                <default_payment_method_id>fullpayment</default_payment_method_id>
+                <default_delivery_method_id>pwb_standard_pwb_standard</default_delivery_method_id>
+            </productmasterimport>
+        </powerbuy_productmaster>
+    </default>
+</config>

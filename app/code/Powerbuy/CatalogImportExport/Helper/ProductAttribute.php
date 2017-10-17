@@ -206,7 +206,6 @@ class ProductAttribute extends AbstractHelper
         /** @var EavSetup $eavSetup */
         $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
         //$eavSetup->removeAttribute(Product::ENTITY, $attributeCode);
-        //FIXME: CHeck exists first, otherwise it will update the attribute
         $eavSetup->addAttribute(
             Product::ENTITY,
             $attributeCode,
@@ -232,7 +231,6 @@ class ProductAttribute extends AbstractHelper
                 'apply_to' => ''
             ]
         );
-        //$attribute = $this->attributeRepository->get($attributeCode); //FIXME, sometime search not found
         $this->attributeManagement->assign(
             Product::ENTITY,
             $attributeSet->getId(),
