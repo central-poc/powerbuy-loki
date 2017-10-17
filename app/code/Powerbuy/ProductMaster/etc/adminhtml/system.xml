@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="powerbuy" sortOrder="2001">
+            <label>Powerbuy</label>
+        </tab>
+        <section id="powerbuy_productmaster" translate="label" type="text" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Product Import API</label>
+            <tab>powerbuy</tab>
+            <resource>Powerbuy_ProductMaster::config_powerbuyproductmasterimport</resource>
+            <group id="productmasterimport" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>General</label>
+                <field id="website_id" translate="label comment" type="select" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Import Product to Website</label>
+                    <source_model>Magento\Config\Model\Config\Source\Website</source_model>
+                </field>
+
+                <field id="product_status" translate="label comment" type="select" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Import Product as Status</label>
+                    <source_model>Powerbuy\ProductMaster\Model\Config\Source\ProductStatus</source_model>
+                </field>
+
+                <field id="online_store_id" translate="label comment" type="select" sortOrder="11"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Online Store Id</label>
+                    <source_model>Powerbuy\ProductMaster\Model\Config\Source\PowerbuyStore</source_model>
+                </field>
+
+                <field id="in_store_price_store_id" translate="label comment" type="select" sortOrder="11"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>In Store Price use Store Id</label>
+                    <source_model>Powerbuy\ProductMaster\Model\Config\Source\PowerbuyStore</source_model>
+                </field>
+
+                <field id="default_payment_method_id" translate="label comment" type="select" sortOrder="11"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Default Payment Method</label>
+                    <source_model>Magento\Payment\Model\Config\Source\Allmethods</source_model>
+                </field>
+                <field id="default_delivery_method_id" translate="label comment" type="select" sortOrder="11"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Default Delivery Method</label>
+                    <source_model>Magento\Shipping\Model\Config\Source\Allmethods</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
