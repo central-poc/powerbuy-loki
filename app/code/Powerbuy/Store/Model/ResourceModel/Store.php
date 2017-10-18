@@ -18,4 +18,15 @@ class Store extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 
         return $connection->fetchAll($query);
     }
+
+    public function getAllStore()
+    {
+        $connection = $this->getConnection();
+        $select = $connection
+            ->select()
+            ->from($this->getMainTable())
+            ->where('is_active = 1')
+        ;
+        return $connection->fetchAll($select);
+    }
 }

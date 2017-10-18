@@ -60,4 +60,27 @@ class StoreRepository implements \Powerbuy\Store\Api\StoreRepositoryInterface
  
          return $result;
      }
+
+    /**
+     * @return array
+     */
+    public function getList()
+     {
+         $result = array();
+         $allStore = $this->resourceStore->getAllStore();
+         foreach ($allStore as $store)
+         {
+             $storeItem = [
+                 'store_code' => $store['StoreCode'],
+                 'name' => $store['Name'],
+                 'address' => $store['Address'],
+                 'open_time' => $store['OpenTime'],
+                 'telephone' => $store['Telephone'],
+                 'email' => $store['Email'],
+             ];
+             $result[] = $storeItem;
+         }
+ 
+         return $result;
+     }
 }

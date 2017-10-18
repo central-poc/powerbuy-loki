@@ -13,4 +13,9 @@ interface StoreRepositoryInterface
      * @throws NoSuchEntityException
      */
      public function get($sku);
+
+    /**
+     * @return array
+     */
+     public function getList();
 }
