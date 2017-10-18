@@ -10,7 +10,7 @@
 
     <!-- Product Service -->
     <route url="/V2/categories" method="GET">
-        <service class="Powerbuy\StorePickup\Api\StorePickupRepositoryInterface" method="get"/>
+        <service class="Powerbuy\Catalog\Api\CategoryRepositoryInterface" method="getTree"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>

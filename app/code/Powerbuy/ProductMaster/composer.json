@@ -1,0 +1,21 @@
+{
+    "name": "powerbuy/productmaster",
+    "description": "Support Powerbuy MMS Product Master",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Powerbuy/ProductMaster"
+            ]
+        ]
+    },
+    "authors": [
+        {
+            "name": "Chatchai Naenudorn",
+            "email": "nachatchai@central.co.th"
+        }
+    ],
+    "require": {}
+}
