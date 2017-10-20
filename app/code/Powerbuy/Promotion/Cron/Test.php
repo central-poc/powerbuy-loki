@@ -16,7 +16,9 @@ class Test {
    */
 
     public function execute() {
-        $this->logger->info('Cron Works');
+        $this->logger->info('Cron Ruang Works');
+        $this->logger->debug('Running Cron from Test class');
+        return $this;
     }
 
 }

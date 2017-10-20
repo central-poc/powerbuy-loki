@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
-    <group id="custom_crongroup">
-        <job name="custom_cronjob" instance="Powerbuy\Promotion\Cron\Test" method="execute">
+    <group id="mr_cron">
+        <job name="ruang_cron" instance="Powerbuy\Promotion\Cron\Test" method="execute">
+            <schedule>* * * * *</schedule>
+        </job>
+        <job name="promotion_cron" instance="Powerbuy\Promotion\Cron\PromotionFromPOS" method="execute">
             <schedule>* * * * *</schedule>
         </job>
     </group>

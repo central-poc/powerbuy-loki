@@ -28,4 +28,19 @@ class Promotion extends AbstractDb
         ;
         return $connection->fetchAll($select);
     }
+
+    public function savePromotion($item)
+    {
+        $connection = $this->getConnection();
+        //$connection->insert($this->getMainTable(),$item);
+        $connection->insertMultiple($this->getMainTable(),$item);
+        //$query = "INSERT INTO ";
+    }
+
+    public function deleteAll()
+    {
+        $connection = $this->getConnection();
+        $query = "DELETE FROM " . $this->getMainTable();
+        $connection->query($query);
+    }
 }

@@ -16,4 +16,7 @@ interface PromotionRepositoryInterface
     public function delete(PromotionInterface $page);
 
     public function deleteById($id);
+
+    public function importPro();
+
 }

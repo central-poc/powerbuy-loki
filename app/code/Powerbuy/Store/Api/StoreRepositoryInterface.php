@@ -15,7 +15,7 @@ interface StoreRepositoryInterface
      public function get($sku);
 
     /**
-     * @return array
+     * @return mixed
      */
      public function getList();
 }

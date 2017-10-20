@@ -2,7 +2,7 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:DCKAP_Test:etc/cron_groups.xsd">
 
-<group id="custom_crongroup">
+<group id="mr_cron">
 
     <schedule_generate_every>1</schedule_generate_every>
 

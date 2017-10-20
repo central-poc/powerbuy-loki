@@ -1,9 +1,9 @@
 <?php
 namespace Powerbuy\Promotion\Model;
 
-use Powerbuy\Promotion\Api\PromotionRepositoryInterface;
+use \Powerbuy\Promotion\Helpers\ConnectSql;
 use Powerbuy\Promotion\Api\Data\PromotionInterface;
-use Powerbuy\Promotion\Model\PromotionFactory;
+use Powerbuy\Promotion\Api\PromotionRepositoryInterface;
 use Powerbuy\Promotion\Model\ResourceModel\Promotion\CollectionFactory;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
@@ -11,19 +11,27 @@ use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Exception\CouldNotDeleteException;
 use Magento\Framework\Api\SearchResultsInterfaceFactory;
-class PromotionRepository implements \Powerbuy\Promotion\Api\PromotionRepositoryInterface
+use \Powerbuy\Promotion\Model\ResourceModel\Promotion;
+class PromotionRepository implements PromotionRepositoryInterface
 {
     protected $objectFactory;
     protected $collectionFactory;
+    protected $helper;
+    protected $resourcePromotion;
     public function __construct(
         PromotionFactory $objectFactory,
         CollectionFactory $collectionFactory,
-        SearchResultsInterfaceFactory $searchResultsFactory       
+        SearchResultsInterfaceFactory $searchResultsFactory,
+        ConnectSql $helper,
+        Promotion $resourcePromotion
+
     )
     {
         $this->objectFactory        = $objectFactory;
         $this->collectionFactory    = $collectionFactory;
         $this->searchResultsFactory = $searchResultsFactory;
+        $this->helper = $helper;
+        $this->resourcePromotion = $resourcePromotion;
     }
     
     public function save(PromotionInterface $object)
@@ -100,4 +108,32 @@ class PromotionRepository implements \Powerbuy\Promotion\Api\PromotionRepository
         }
         $searchResults->setItems($objects);
         return $searchResults;        
-    }}
+    }
+
+    public function importPro()
+    {
+        $conn = $this->helper->ConnectDBInterface();
+        $query = 'EXECUTE dbo.sp_GetPromotionForTablet';
+        $result = sqlsrv_query($conn,$query);
+
+        if(sqlsrv_has_rows($result))
+        {
+            $this->resourcePromotion->deleteAll();
+            $item = array();
+            while ($row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC))
+            {
+                $item[] = [
+                    'promotion_num' => $row['PMNum'],
+                    'promotion_name' => $row['PMName'],
+                    'promotion_type' => $row['PMType'],
+                    'start_date' => $row['SDATE']->format('Y-m-d'),
+                    'end_date' => $row['EDATE']->format('Y-m-d'),
+                    'status' => 'A',
+                    'product_sku' => $row['SKU']
+                ];
+
+            }
+            $this->resourcePromotion->savePromotion($item);
+        }
+    }
+}
