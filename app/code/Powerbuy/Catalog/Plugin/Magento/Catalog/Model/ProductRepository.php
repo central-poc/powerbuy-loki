@@ -72,10 +72,13 @@ class ProductRepository
 
     function afterGet($subject, $result)
     {
-        $searchProduct =  $this->restRequest->getParams();
-        $storeId = $searchProduct['branch_id'];
-        $this->setExtensionProductByStore($result, $storeId);
-        $this->setExtensionPromotionByProduct($result);
+        $requestParams =  $this->restRequest->getParams();
+        if (array_key_exists('branch_id', $requestParams)) {
+            $storeId = $searchProduct['branch_id'];
+            $this->setExtensionProductByStore($result, $storeId);
+            $this->setExtensionPromotionByProduct($result);
+        }
+
         return $result;
     }
 
