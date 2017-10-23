@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Powerbuy\Catalog\Api\CategoryRepositoryInterface" type="Powerbuy\Catalog\Model\CategoryRepository"/>
-    <!--<type name="Magento\Catalog\Model\Product">-->
-        <!--<plugin name="powerbuy_catalog_magento_catalog_model_product" type="Powerbuy\Catalog\Plugin\Magento\Catalog\Model\Product"/>-->
-    <!--</type>-->
+
     <type name="Magento\Catalog\Model\ProductRepository">
         <plugin name="powerbuy_catalog_magento_catalog_model_productrepository" type="Powerbuy\Catalog\Plugin\Magento\Catalog\Model\ProductRepository"/>
+    </type>
+    <type name="Magento\Catalog\Model\Config">
+        <plugin name="powerbuy_catalog_magento_catalog_model_config" type="Powerbuy\Catalog\Plugin\Magento\Catalog\Model\Config"/>
     </type>
 </config>
