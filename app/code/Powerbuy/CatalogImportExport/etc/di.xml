@@ -16,9 +16,11 @@
             <argument name="setup" xsi:type="object">Magento\Framework\Module\Setup\Context</argument>
         </arguments>
     </virtualType>
-
     <!-- plugins -->
     <type name="Magento\CatalogImportExport\Model\Import\Product">
         <plugin name="powerbuy_catalogimportexport_magento_catalogimportexport_model_import_product" type="Powerbuy\CatalogImportExport\Plugin\Magento\CatalogImportExport\Model\Import\Product"/>
+    </type>
+    <type name="Magento\CatalogImportExport\Model\Import\Product\Validator">
+        <plugin name="powerbuy_catalogimportexport_magento_catalogimportexport_model_import_product_validator" type="Powerbuy\CatalogImportExport\Plugin\Magento\CatalogImportExport\Model\Import\Product\Validator"/>
     </type>
 </config>

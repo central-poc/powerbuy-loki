@@ -31,10 +31,6 @@ class Product
     }
     function beforeValidateRow($subject, array $rowData, $rowNum)
     {
-        //create brand option
-        if (array_key_exists('brand', $rowData)) {
-            $this->productAttributeOptionHelper->createOrGetId('brand', $rowData['brand']);
-        }
         //create attribute set
         $attributeSetCode = $rowData['attribute_set_code'];
         $attributeSet = $this->productAttributeHelper
