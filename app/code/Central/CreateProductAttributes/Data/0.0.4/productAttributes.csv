@@ -1,0 +1,1797 @@
+Audio Output,Text,,audio_output,N,Y,QLED TV
+Android,Text/Dropdown,,android3D,Y,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Automatic ice-making system,Text,,automatic_ice_making_system,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator 4 Doors up
+Refrigerator Side-By-Side"
+Adjusting the wind level,Text,,adjusting_the_wind_level,N,Y,"Electric Fan
+Hair Dryers
+Hoods
+Tower Electric Fans
+Wall / Ceiling Electric Fans"
+Adjustable Drying Mode,Text,,adjustable_drying_mode,N,Y,Dryer - Venting
+Automatic Cooking (Programs),Text,,automatic_cooking,N,Y,"Electric Fan
+Microwave
+Oven"
+Adjustable speed (level),Text,level,adjustable_speed,N,Y,Blenders & Juicers
+Adjusting Power,Text,,adjusting_power,N,Y,Water Heaters
+Air circulation system,Text,,air_circulation_system,N,Y,Hoods
+Air Cleaning Mode,Text,,air_cleaning_mode,N,Y,"Air Purifiers
+Air Purifiers Accessories
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Non-inverter)
+Service"
+Accelerate the cooling system,Text,,accelerate_the_cooking_system,N,Y,"Floor/Ceiling Type (Inverter)
+Portable Air Conditioners
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Service"
+AC ADAPTER-INPUT,Text,,ac_adapter_input,N,Y,Chargers/Wall Chargers
+Automatic water level adjustment,Text,,automatic_water_adj,N,Y,"Front Loader
+Washer & Dryer Combination"
+Adorn Mode,Text,,adorn_mode,N,Y,Headphones
+AutoRestart,Text,,auto_restart,N,Y,"Wall Type (Inverter)
+Wall Type (Non-inverter)
+Service
+Portable Air Conditioners"
+Anti Crease,Text,,anti_crease,N,Y,"Dryer - Venting
+Dryer - Condensing"
+Anti Crease Program,Text,,anti_crease_program,N,Y,Washer & Dryer Combination
+Anti-rust coating,Text,,anti_rust_coating,N,Y,"Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Service"
+AudioRecored,Text,,audio_recorded,N,Y,Camera Accessories
+Amplify,Text,,amplify,N,Y,Amplifiers
+Audio Receiver,Text,,audio_receiver,N,Y,Guitars
+Brightness(CD/M),Text,,brightness_cd_m,N,Y,"LED TVs
+Smart & 3D TV
+Smart TVs"
+Built-In,Text,,built_in,N,Y,Smart TVs
+Battery size,Text,,battery_size,N,Y,Microphone
+BLUETOOTH Supported,Text,,bluetooth_supported,N,Y,"Home Theater 5.1Ch
+Soundbars
+Others
+Receiver
+Micro HiFi
+Mini Disk HiFi
+Karaoke Sets
+Other Musical Accessories"
+Battery,Text,,battery,N,Y,"Bluetooth Headsets
+Camera Accessories
+CD & DVDs
+CD Players
+Digital Frames & Albums
+Media Players
+Miscellaneous
+MP3
+Power Banks
+Radio"
+Body,Text,,body,N,Y,"Guitars
+Other"
+BTU Range,Dropdown,,btu_range,Y,Y,Wall Type (Inverter)
+Battery Warranty,Text,,battery_warranty,N,Y,Drone
+Battery Capacity,Text,,batterry_capacity,N,Y,"Camcorder Accessories
+Power Banks"
+BATTERY COMMY SAFTY VALVE FORDIGITAL CAMERA BATTERY MODEL,Text,,battery_commy_safty_value,,,Camcorder Accessories
+Battery Type,Text,,battery_type,N,Y,"Camcorder Accessories
+Power Banks"
+Box Content,Text,,box_content,N,Y,"Chargers / Wall Chargers
+Data Cables & Data Links
+Cases & Covers
+External Device"
+Battery Types,Text,,battery_types,N,Y,Power Banks
+Body Depth,Text,,body_depth,N,Y,Guitars
+Bridge,Text,,bridge,N,Y,Guitars
+Brightness(CD/M),Text,CD/M,brightness,N,Y,"Smart & 3D TV
+LED TVs
+Smart TVs"
+Battery Indicator,Text,,battery_indicator,N,Y,Camcorder Accessories
+BATTERY LI-ON FOR OLYMPUS PEN,Text,,battery_li_on_olympus_pen,N,Y,Camcorder Accessories
+Back & Body sides (ribs),Text,,back_body_sides,N,Y,Guitars
+BACK and SIDES,,,back_and_sides,,,Guitars
+Contrast Ratio,Text,,contrast_ratio,N,Y,"QLED TV
+Smart & 3D TV
+Smart TVs
+LED TVs"
+Construction,Text,,construction,N,Y,Guitars
+Camera,Text,,camera,N,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Connecting Ports,Text,,connecting_ports,N,Y,"Bluetooth & Wireless Speaker
+CD & DVDs
+QLED TV
+Smart & 3D TV
+LED TVs
+Smart TVs
+Home Theater 5.1Ch
+Media Players
+CD Players
+MP3
+Headphones
+Portable Speakers
+Main Speakers
+External Hard Disks
+CD & DVDs"
+Connecting Ports /Cord Length,Text,,connecting_ports_cord_length,N,Y,Chargers / Wall Chargers
+COMPOSED OF2 MATERIALS,Text,,composed_of2_materials,N,Y,Cases & Covers
+Color,Text/Dropdown,,color,Y,Y,"Action Camera
+Apple Watch
+Apple Watch Accessories
+Bags
+Bluetooth & Wireless Speaker
+Built-in - Dish Washer
+Connected Toy
+Connectors
+Cases & Covers
+CCTV & IP Cameras
+Chargers / Wall Chargers
+Deep Fryers
+Gaming Headset
+Gaming Accessies
+Gaming Keyboard
+Gaming Mouse
+Game Console
+Polaroid Cameras (Instant Camera)
+Electric Toothbrushes
+Hood & HOB
+Hobs
+Dish Washers
+Oven
+Electric Fan
+Table Top - Dish Washer
+Built-in - Dish Washer
+Free Stand - Dish Washer
+For TV antenna (Digital box)
+Headphones
+Portable Speakers
+Microphone
+Visual Cables
+Other
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator 4 Doors up
+Refrigerator Side-By-Side
+Freezers
+Water Purifier Accessories
+Smart Watch
+Watch
+Wearable Technology Accessories
+Drone
+Power Bank
+Batteries
+Hand Free Kits
+iPhone Accessories
+External Device
+iPad Accessories
+Macbook Accessories
+Tripods
+Lens Caps
+Straps
+Cleaners
+Films
+Gaming Accessories
+Note Pad
+Mouse
+Other Accessories
+External Hard Disks
+Keyboards
+Diskettes
+Plugs
+Speakers
+Internet Software
+Utilities Bag
+Guitars"
+Color Available,Text/Dropdown,,color_available,N,Y,Headphones
+Cord,Text,,cord,N,Y,Headphones
+Controlling System,Text,,controlling_system,N,Y,"Bluetooth & Wireless Speaker
+Headphones
+Speakers
+Diskettes
+Portable Speakers"
+Cable Connecting,Text,,cable_connecting,N,Y,Headphones
+Continuous Play,Text,,continuous_play,N,Y,"CD & DVDs
+CD Players
+Media Players
+MP3"
+Call pick up / Call out button,Text,,"call_pick _up
+call_out button",N,Y,"Portable Speakers
+Bluetooth & Wireless Speaker"
+Carrier Frequency,Text,,carrier_frequency,N,Y,Other
+Conductor,Text,,conductor,N,Y,Other
+Connector Types,Text,,connector_types,N,Y,Other
+Capacity (Cubic),Text/Dropdown,,capacity,Y,Y,"Automatic
+Camera Accessories
+External Hard Disks
+Flash Drives
+Freezers
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Refrigerators Inverter
+Washer & Dryer Combination
+Wine & Beverage Cooler"
+Chilled Capacity,Text,Liters,chilled_capacity,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Freezers"
+Cold distribution system,Text,,cold_distribution_system,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Portable Air Conditioners
+Cassette Type
+Service"
+Controls,Text,,controls,N,Y,Guitars
+Cooling system,Text,,cooling_system,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator 4 Doors up
+Refrigerator Side-By-Side
+Wine & Beverage Cooler
+Freezers"
+Compressor Warranty (Year),Text,,compressor_warranty,N,Y,"Cassette Type
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Wine & Beverage Cooler
+Freezers
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Portable Air Conditioners
+Service"
+Cord Length,Text,(m),cord_length,N,Y,"Microphone
+Hand Free Kits
+Diskettes
+Headphones
+Other
+Steam Irons
+Dry Irons
+Stream Generators
+Handheld Vacuum Cleaners
+Wet & Dry Vacuum Cleaners
+Chargers / Wall Chargers"
+Capacity of Jar (Liters),Text,Liters,capacity_of_jar,N,Y,"Blenders & Juicers
+Deep Fryers"
+Cooking Mode,Text,,cooking_mode,N,Y,"Deep Fryers
+Electric Fan
+Oven
+Hood & HOB"
+Calc System,Text,,calc_system,N,Y,Electric Kettle
+Component Video Output,Text,,component_video_output,N,Y,DVD
+Cable Connection,Text,,cable_connection,N,Y,For TV antenna (Digital box)
+"CH,VHF,UHF",Text,,ch_vhf_uhf,N,Y,For TV antenna (Digital box)
+CHANNELS,Text,,channels,N,Y,For TV antenna (Digital box)
+Connect,Text,,connect,N,Y,"Bluetooth & Wireless Speaker
+Portable Speakers"
+Cable Types,Text,,cable_types,N,Y,Headphones
+Cale Iength,Text,,cale_length,N,Y,Data Cables & Data Links
+Cale System,Text,,cale_system,N,Y,Electric Kettle
+Child Lock,Text,,child_lock,N,Y,"Front Loader
+Washer & Dryer Combination"
+Coating Technology,Text,,coating_technology,N,Y,"Stream Generators
+Steam Irons
+Dry Irons"
+Coating Inside With,Text,,coating_inside_with,N,Y,Rice Cookers
+Continuous operation when the power goes out,Text,,continuos_operation,N,Y,Top Loader 1 Tub
+Cooling Capacity (BTU),Dropdown,,cooling_capacity,Y,Y,"Cassette Type
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Portable Air Conditioners
+Service"
+Cooking Timer (Min.),Text,,cooking_timer,N,Y,"Electric Fan
+Microwave
+Oven"
+Compatible with,Text,,compatible_with,N,Y,"Chargers/Wall Chargers
+Data Cables & Data Links"
+Cover Mat,Text,,cover_mat,N,Y,"Bags
+Cases & Covers"
+Card Types,Text,,card_types,N,Y,"Accessories for Computers
+Card Readers
+Memory Cards
+Camera Accessories
+Flash Drives
+External Hard Disks"
+Capacity,Text/Dropdown,"GB
+Liters",capacity,Y,Y,"Accessories for Computers
+Coffee Maker
+Electric Fan
+Electric Kettle
+Electric Pots
+External Hard Disks
+Flash Drives
+Hood & HOB
+Memory Cards
+Microwave
+Oven
+Rice Cookers"
+Controlling button,Text,,controlling_button,N,Y,"Amplifiers
+Guitars"
+Connector texture,Text,,connector_texture,N,Y,Headphones
+Cord Collecting,Text,,cord_collecting,N,Y,Rice Cookers
+Cable Length,Text,,cable_length,N,Y,"Headphones
+Hand Free Kits
+Chargers / Wall Chargers"
+Car Adapter-Input,Text,,car_adapter_input,N,Y,Chargers/Wall Chargers
+Coating,Text,,coating,N,Y,Guitars
+Cancel Spinning,Text,,cancel_spinning,N,Y,Front Loader
+Capacity of Mixing bowl,Text,,capacity_of_mixing_bowl,N,Y,Food processors & mixers
+Dimension,Text,"1: cm
+2: Include Stand",dimension,N,Y,"3D Blu-Ray Players
+Air Purifiers
+Air Purifiers Accessories
+Amplifier
+Audio Cables
+Blenders & Juicers
+Bluetooth & Wireless Speaker
+Blu-ray Players
+Built-in - Dish Washer
+Camcorder Accessories
+Camera Accessories
+Cannister Vacuum Cleaners
+Card Readers
+Cases & Covers
+Cassette Type
+CCTV & IP Cameras
+CD & DVDs
+CD Players
+Centre Speakers
+Chargers / Wall Chargers
+Coffee Maker
+Data Cables & Data Links
+Deep Fryers
+Digital Frames & Albums
+Dish Washers
+Docks
+Dry Irons
+Dryer - Condensing
+Dryer - Venting
+DVD
+Electric barbecue grill
+Electric Fan
+Electric Kettle
+Electric Pots
+Electric stove / Gas Range
+Flash Drives
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Food processors & mixers
+Free Stand - Dish Washer
+Freezers
+Front Loader
+Guitars
+Hair Dryers
+Hand Free Kits
+Handheld Vacuum Cleaners
+Headphones
+Hobs
+Home Theater 2.1Ch
+Home Theater 5.1Ch
+Hood & HOB
+Hoods
+Karaoke Sets
+Keyboards
+LED TVs
+Main Speakers
+Massage Chair
+Media Players
+Memory Cards
+Micro HiFi
+Microwave
+Microwave Accessories
+Miscellaneous
+Mouse
+MP3
+Other
+Other Accessories
+Others
+Oven
+Pianos
+Plastic
+Portable Air Conditioners
+Portable Speakers
+Power Banks
+QLED TV
+Radio
+Receiver
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Rice Cookers
+Robotic Vacuum Cleaners
+Service
+Smart & 3D TV
+Smart TVs
+Soundbar
+Soundbars
+Speaker Sets
+Speakers
+Stainless
+Steam Irons
+Stick Vacuum Cleaners
+Stream Generators
+Subwoofers
+Surround Sound
+Table Top - Dish Washer
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Utilities Bag
+Wall Mounted
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Washer & Dryer Combination
+Water Cooler
+Water Heaters
+Water Purifiers
+Weight Scale
+Wet & Dry Vacuum Cleaners
+Wine & Beverage Cooler"
+Display Screen,Text/Dropdown,Inches,display_screen,Y,Y,"QLED TV
+4K Ultra HD TV
+Smart & 3D TV
+Smart TVs
+LED TVs
+Washer & Dryer Combination
+Weight Scale
+Camera Accessories
+CD & DVDs"
+Digital TV,Text,,digital_tv,N,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Disc Type,Text/Dropdown,,disc_type,Y,Y,"Soundbars
+Home Theater 5.1Ch
+Others
+Blu-ray Players
+3D Blu-Ray Players
+DVD
+Mini Disk HiFi
+Micro HiFi
+Main Speakers
+Docks
+CD & DVDs
+Other Musical Accessories"
+DLNA,Text,,dlna,N,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Diagram plate,Text,,diagram_plate,N,Y,Headphones
+DRIVER DIAMETER,Text,,driver_diameter,N,Y,Headphones
+Drive Units,Text,,drive_units,N,Y,"Main Speakers
+Speaker Sets"
+DRIVER UNIT,Text,,driver_unit,N,Y,Headphones
+DC Current,Text,,dc_current,N,Y,Other
+Dielectric,Text,,dielectric,N,Y,Other
+Directivity,Text,,directivity,N,Y,Other
+Defrosting,Text,,Defrosting,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Freezers"
+Door Thickness,Text,,door_thickness,N,Y,"Refrigerator Side-By-Side
+Electric Fan
+Oven
+Hood & HOB"
+Drum size (kg),Dropdown,kg,drum_size,Y,Y,"Front Loader
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Washer & Dryer Combination
+Dryer - Condensing"
+Drum made of material,Text,,drum_made_of_material,N,Y,"Front Loader
+Top Loader 2 Tubs
+Washer & Dryer Combination
+Dryer - Venting
+Dryer - Condensing"
+Dryer Mode,Text,,dryer_mode,N,Y,"Dryer - Condensing
+Dryer - Venting"
+Dry Jar,Text,,dryer_jar,N,Y,Blenders & Juicers
+Dust Bag Capacity,Text,"cm
+liters",dust_bag_capacity,N,Y,"Handheld Vacuum Cleaners
+Robotic Vacuum Cleaners
+Stick Vacuum Cleaners
+Wet & Dry Vacuum Cleaners
+Cannister Vacuum Cleaners"
+Dust Bin,Text,,dust_bin,N,Y,"Stick Vacuum Cleaners
+Cannister Vacuum Cleaners
+Robotic Vacuum Cleaners
+Wet & Dry Vacuum Cleaners
+Handheld Vacuum Cleaners"
+Dust Filter System,Text,,dust_filter_system,N,Y,"Cannister Vacuum Cleaners
+Wet & Dry Vacuum Cleaners
+Stick Vacuum Cleaners
+Robotic Vacuum Cleaners
+Handheld Vacuum Cleaners"
+Drill Sizes,Text,cm,drill_sizes,N,Y,"Hobs
+Hoods
+Hood & HOB"
+Demo,Text,,demo,N,Y,iPod Accessories
+Diameter of Speaker,Text,,diameter_of_speaker,N,Y,"Hand Free Kits
+Headphones"
+Digital Signal input / output,Text,,digital_signal_input_output,N,Y,Camera Accessories
+Diaphragm plate,Text,,diaphragm_plate,N,Y,Headphones
+Display,Text,,display,N,Y,Digital Frames & Albums
+Enclosure Type,Text,,enclosuer_type,N,Y,Subwoofers
+Expand Jack,Text,,expand_jack,N,Y,"Portable Speakers
+Bluetooth & Wireless Speaker"
+Effective Distance,Text,,effective_distance,N,Y,Other
+EFFECTIVE FREQUENCY,Text,,effective_frequence,N,Y,Headphones
+Element,Text,,element,N,Y,Other
+Energy Saving Awarded Label No.5,Text,,energy_saving,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Freezers
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Electric Fan"
+Economy Mode,Text,,economy_mode,N,Y,"Front Loader
+Washer & Dryer Combination
+Top Loader 1 Tub"
+EcoMode,Text,,eco_mode,N,Y,"Floor/Ceiling Type (Inverter)
+Service
+Wall Type (Inverter)
+Wall Type (Non-inverter)"
+Electrical Resistance,Text,,electrical_resistance,N,Y,Hand Free Kits
+EER,Text,,eer,N,Y,"Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Portable Air Conditioners
+Service
+Wall Type (Inverter)
+Wall Type (Non-inverter)"
+Effects,Text,,effects,N,Y,Amplifiers
+Eliminate / Prevent bacteria and fungus.,Text,,eliminate_prevent_bac,N,Y,"Front Loader
+Washer & Dryer Combination"
+External Hard Disk 2.5,Text,,external_hard_disk_2.5,N,Y,External Hard Disks
+Features,Text,,features,N,Y,QLED TV
+FERQUENCY RESPONSE,Text,,ferquency_response,N,Y,Headphones
+FILE FORMAT,Text,,file_format,N,Y,"Digital Frames & Albums
+Camera Accessories"
+Filter system,Text,,filter_system,N,Y,Blenders & Juicers
+Fingerboard,Text,,finger_board,N,Y,Guitars
+FINISH,Text,,finish,N,Y,Guitars
+FM Radio Supported,Text,,fm_radio_supported,N,Y,CD Players
+Food Steaming Mode,Text,,food_streaming_mode,N,Y,Rice Cookers
+For,Text,,for,N,Y,"For TV antenna (Digital box)
+Headphones
+Other
+Visual Cables
+Action Camera
+Gaming Headset
+Watch
+Apple Watch
+Wearable Technology Accessories
+Apple Watch Accessories
+Connected Toy
+Drone
+Macbook Accessories
+iPad Accessories
+iPhone Accessories
+External Device
+Power Banks
+Chargers / Wall Chargers
+Hand Free Kits
+Batteries
+Others
+Bags
+Batteries & Chargers
+Power Bank
+Hand Free Kits
+Cases & Covers
+Films
+Connectors
+Filters
+Dry Box & Cabinets
+Lens Caps
+Straps
+Tripods
+Bags
+Gaming Accessories
+Hubs
+Plug & Connectors
+Diskettes
+Keyboards
+Mouse
+Internet Network Hardware
+CCTV & IP Cameras
+Utilities Bag
+Plugs"
+For Room size (Sqm.),Text/Dropdown,sqm,for_room_size,Y,Y,"Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Portable Air Conditioners
+Cassette Type
+Service
+Air Purifiers Accessories
+Air Purifiers"
+FOR SAMSUNG MODEL,Text,,for_samsung_mode,N,Y,Camcorder Accessories
+FOR USE WITH,Text,,for_use_with,N,Y,Other
+For wrist size,Text,,for_wrist_size,N,Y,Apple Watch
+FR,Text,,fr,N,Y,Receiver
+Freezer Capacity (liter),Text,liter,freezer_capacity,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator Side-By-Side
+Refrigerator 3 Doors"
+FREQUENCY,Text,,frequency,N,Y,"Headphones
+Speakers
+Subwoofers"
+FREQUENCY RANGE,Text,,frequency_range,N,Y,Bluetooth Headsets
+FREQUENCY RESPONSE,Text,,frequency_response,N,Y,"Amplifier
+Headphones
+Microphone
+Other
+Hand Free Kits
+
+Speakers"
+FREQUENCY RES,Text,,frequency_res,N,Y,Other
+FREQUENCY STABILITY,Text,,frequency_stability,N,Y,Other
+FRETS,Text,,frets,N,Y,Guitars
+Function,Text,,function,N,Y,"Toaster
+Coffee Maker
+Electric Kettle
+Cases & Covers
+Chargers / Wall Chargers
+Power Banks
+Bags
+Other Accessories"
+GAUGE,Text,,gauge,N,Y,Other
+GENERAL REQUIREMENTS,Text,,general_requirements,N,Y,Macbook Accessories
+GEOMETRY,Text,,geometry,N,Y,Other
+Grilling Mode,Text,,grilling_mode,N,Y,"Electric Fan
+Hood & HOB
+Oven"
+"High Definition Ready, Resolution",Text,,high_definition_ready,N,Y,LED TVs
+HDMI,Text,,hdmi,N,Y,Home Theater 5.1Ch
+HDMI Connecting,Text,,hdmi_connecting,N,Y,"Home Theater 5.1Ch
+Receiver"
+Headphone Driver Size,Text,,headphone_driver_size,N,Y,Headphones
+High Quality HDMI (SPEED RATE BANDWIDTH),Text,,high_quality_hdmi,N,Y,"Audio Cables
+Other"
+Humidity control,Text,,humidity_control,N,Y,"Floor/Ceiling Type (Inverter)
+Portable Air Conditioners
+Service
+Wall Type (Inverter)
+Wall Type (Non-inverter)"
+Heating level setting (level),Text,level,heating_level_setting,N,Y,"Electric Fan
+Microwave
+Oven"
+Heater,Text,,heater,N,Y,"Water Boilers
+Water Heaters"
+Heater Warranty (Year),Text,level,heater-warranty,N,Y,"Water Boilers
+Water Heaters"
+Impedance,Text,,impedance,N,Y,"Hand Free Kits
+Other
+Headphones"
+Incluede Ear,Text,,incluede_ear,N,Y,Headphones
+Incluede Ear Tips,Text,,incluede_ear_tips,N,Y,Headphones
+Input Plug Diameter,Text,,input_plug_diameter,N,Y,Headphones
+Image System,Text,,image_system,N,Y,"LED TVs
+QLED TV
+Smart & 3D TV
+Smart TVs"
+Input,Text,,input,N,Y,"Chargers / Wall Chargers
+Home Theater 5.1Ch
+Micro HiFi
+Other
+Others
+Power Banks
+Receiver
+Amplifier"
+Ipod Docking Option,Text,,ipod_docking_option,N,Y,Docks
+Input Language,Text,,input_language,N,Y,Remote Controls
+Inverter System,Text,,inverter_system,N,Y,"Floor/Ceiling Type (Inverter)
+Service
+Wall Type (Inverter)
+Wall Type (Non-inverter)"
+Inverter Range(BTU),Text/Dropdown,,inverter_range,Y,Y,"Floor/Ceiling Type (Inverter)
+Wall Type (Inverter)
+Wall Type (Non-inverter)"
+Internal power cut,Text,,internal_power_cut,N,Y,Water Heaters
+Input Power,Text,,input_power,N,Y,"Chargers / Wall Chargers
+Data Cables & Data Links"
+Input Voltage,Text,,input_voltage,N,Y,Chargers / Wall Chargers
+Image Resolution,Text,Pixel,image_resolution,N,Y,Camera Accessories
+Image Stabilizer,Text,,image_stabilizer,N,Y,Camera Accessories
+Interfaces,Text,,interfaces,N,Y,Internet Network Hardware
+Internal Grill/Convection System,Text,,internal_grill,N,Y,"Microwave
+Oven
+Electric Fan"
+Induction heating material,Text,,induction_heating_material,N,Y,Water Heaters
+Jack size,Text,,jack_size,N,Y,"Portable Speakers
+Bluetooth & Wireless Speaker"
+Jacket,Text,,jack,N,Y,Other
+Jar Types Plastic/Glass,Text,,jar_types_plastic,N,Y,Blenders & Juicers
+Keep temperature (hours),Text,,keep_temperature,N,Y,"Electric Pots
+Electric Kettle"
+Key Features,Text,,key_features,N,Y,Bluetooth Headsets
+Lan,Text,,lan,N,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Line Lenght,Text,,line_length,N,Y,Headphones
+Length(m),Text/Dropdown,m,length,Y,Y,"Data Cables & Data Links
+Chargers / Wall Chargers
+Other"
+Lens Types,Text,,lens_type,N,Y,Camera Accessories
+LIFT amp CUT System,Text,,lift_amp_cut_system,N,Y,Shavers
+LEATHER CASE FOR OLYMPUS MODEL,Text,,leather_case_for_olympus_model,N,Y,Bags
+Light indicator,Text,,light_indicator,N,Y,Hoods
+LINING MATERIAL,Text,,lining_material,N,Y,Bags
+Loudspeaker,Text,,loudspeaker,N,Y,Amplifiers
+Memory,Text,,memory,N,Y,"Media Players
+CD Players
+MP3
+Digital Frames & Albums"
+Material,Text,,material,N,Y,"Apple Watch
+Apple Watch Accessories
+Bags
+Batteries
+Batteries & Chargers
+Bluetooth & Wireless Speaker
+Cases & Covers
+CCTV & IP Cameras
+Chargers / Wall Chargers
+Connected Toy
+Connectors
+Drone
+External Device
+Films
+Filters
+For TV antenna (Digital box)
+Game Console
+Gaming Headset
+Gaming Keyboard
+Guitar Accessories
+Hand Free Kits
+Headphones
+iPad Accessories
+iPhone Accessories
+Lens Caps
+Macbook Accessories
+Microphone
+Other
+Plugs
+Portable Speakers
+Power Bank
+Power Banks
+Speakers
+Tripods
+Utilities Bag
+Visual Cables
+Watch
+Water Purifier Accessories
+Wearable Technology Accessories"
+Maximum Power,Text/Dropdown,WATT,maximum_power,Y,Y,"Hoods
+Free Stand - Dish Washer
+Built-in - Dish Washer
+Table Top - Dish Washer
+Hobs"
+Maximum Amplify,Text,,maximum_amplify,N,Y,Headphones
+Maximum washing temperature(celcius),Text,,maximum_washing_temperature,N,Y,Table Top - Dish Washer
+Magnetic types,Text,,magnetic_types,N,Y,Headphones
+Max. Current,Text,,max_current,N,Y,Other
+Max. Power,Text,,max_power,N,Y,Other
+Max. Voltage,Text,,max_voltage,N,Y,Other
+Metal,Text,,metal,N,Y,Other
+Maximum water level (liters),Text,,maximum_water_level,N,Y,"Front Loader
+Top Loader 2 Tubs
+Washer & Dryer Combination"
+Motor System,Text,,motor_system,N,Y,"Front Loader
+Washer & Dryer Combination"
+Motor Warranty (Year),Text,,motor_warranty,N,Y,"Front Loader
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Washer & Dryer Combination
+Dryer - Condensing
+Dryer - Venting
+Electric Fan
+Tower Electric Fans
+Wall / Ceiling Electric Fans
+Robotic Vacuum Cleaners
+Wet & Dry Vacuum Cleaners
+Canister Vacuum Cleaners
+Stick Vacuum Cleaners
+Handheld Vacuum Cleaners
+Electric Fan"
+Mode,Text,,mode,N,Y,"Electric Fan
+Air Purifiers Accessories
+Air Purifiers
+Microwave
+Oven"
+Mortor Power (watt),Text,watt,motor_power,N,Y,"Automatic
+Blenders & Juicers"
+Made of material,Text,,made_of_material,N,Y,"Toaster
+Electric stove / Gas Range
+Electric stove / Gas Range"
+Maximum Weight (kg),Text,Kg,maximum_weight,N,Y,Weight Scale
+Model,Text,,model,N,Y,"Macbook Accessories
+Camera Accessories
+External Hard Disks
+Mouse
+Diskettes
+Plug & Connectors
+Hubs
+Internet Software
+Guitars"
+Model/Color,Text,,model_color,N,Y,"Gaming Mouse
+Note Pad"
+Maximum Power Input,Text,,maximum_power_input,N,Y,Hand Free Kits
+Mfi,Text,,mfi,N,Y,Data Cables & Data Links
+Memory Card Type,Text,,memory_card_type,N,Y,Memory Cards
+Media Player,Text,,media_player,N,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Media Types / Media Format,Text,,media_types,N,Y,Camera Accessories
+MEMORY CARD,Text,,memory_card,N,Y,Digital Frames & Albums
+METERIAL,Text,,meterial,N,Y,"Cases & Covers
+Bags
+Note Pad"
+Minimum Height,Text,,minimum_height,N,Y,Guitar Accessories
+Maximum height,Text,,maximum_height,N,Y,Guitar Accessories
+MINIMUM IMPEDANCE,Text,,minimum_impedance,N,Y,Headphones
+Max Sensitivity,Text,,max_sensitivity,N,Y,Headphones
+Maximum Input,Text,,maximum_input,N,Y,Headphones
+Maximum connection (dots),Text,,maximum_connection,N,Y,Water Heaters
+Maximum Sucking power (CC.),Text,,maximum_sucking_power,N,Y,Hoods
+Number of channels,Text,,number_of_channels,N,Y,"Soundbars
+Home Theater 5.1Ch
+Micro HiFi
+Mini Disk HiFi
+Receiver
+Docks
+CD & DVDs
+Other Musical Accessories"
+Natural Mode,Text,,natural_mode,N,Y,Electric Fan
+NECK,Text,,neck,N,Y,Guitars
+Neckjoint,Text,,neck_joint,N,Y,Guitars
+Network,Text,,network,N,Y,QLED TV
+Number of electric stove(head),Text,head,number_of_electric_stove,N,Y,"Electric stove / Gas Range
+Hobs"
+Number of wash programs,Text,,number_of_wash_programs,N,Y,"Free Stand - Dish Washer
+Built-in - Dish Washer
+Table Top - Dish Washer
+Dish Washers"
+Noise volume,Text,,noise_volume,N,Y,Hoods
+Number of Speaker,Text,,number_of_speaker,N,Y,"Headphones
+Portable Speakers
+Bluetooth & Wireless Speaker
+Diskettes
+Speakers"
+Number of washed containers,Text,,number_of_washed_containers,N,Y,"Free Stand - Dish Washer
+Table Top - Dish Washer
+Built-in - Dish Washer"
+Number of outlet,Text,,number_of_outlet,N,Y,Other
+NOMINAL IMPEDANCE,Text,,nomial_impedance,N,Y,"Speaker Sets
+Main Speakers"
+NUT WIDTH,Text,,nut_width,N,Y,Guitars
+Others,Text,,others,N,Y,"3D Blu-Ray Players
+Accessories for Computers
+Action Camera
+Air Purifier Accessories
+Air Purifiers Accessories
+Air Purifiers
+Amplifier
+Apple Watch
+Automatic
+Bags
+Batteries
+Batteries & Chargers
+Blenders & Juicers
+Blood Pressure Measuring
+Bluetooth & Wireless Speaker
+Blu-ray Players
+Built-in - Dish Washer
+Camera Accessories
+Cannister Vacuum Cleaners
+Card Readers
+Cases & Covers
+Cassette Type
+CD & DVDs
+CD Players
+Centre Speakers
+Chargers
+Chargers / Wall Chargers
+Cleaners
+Coffee Maker
+Connected Toy
+Deep Fryers
+Dish Washers
+Diskettes
+Docks
+Drone
+Dry Irons
+Dryer - Venting
+DVD
+Electric barbecue grill
+Electric Fan
+Electric Kettle
+Electric Pans
+Electric Pots
+Electric stove / Gas Range
+Electric Toothbrushes
+External Device
+External Hard Disks
+Fan Accessories
+Films
+Filters
+Flash Drives
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+For TV antenna (Digital box)
+Free Stand - Dish Washer
+Freezers
+Front Loader
+Game Console
+Gaming Accessies
+Gaming Accessories
+Gaming Headset
+Gaming Keyboard
+Gaming Mouse
+Guitar Accessories
+Hair Clippers
+Hair Curlers
+Hair Dryers
+Hand Free Kits
+Handheld Vacuum Cleaners
+Headphones
+Hobs
+Home Theater 2.1Ch
+Home Theater 5.1Ch
+Hood & HOB
+Hoods
+Hubs
+Internet Network Hardware
+Internet Software
+iPad Accessories
+iPhone Accessories
+Keyboards
+LED TVs
+Lens Caps
+Macbook Accessories
+Main Speakers
+Media Players
+Memory Cards
+Micro HiFi
+Microphone
+Microwave
+Mini Disk HiFi
+Mouse
+MP3
+Multi-Purpose Cookers
+Note Pad
+Other
+Other Health Care
+Other Musical Accessories
+Other Personal Care & Beauty
+Others
+Oven
+Plugs
+Polaroid Cameras (Instant Camera)
+Portable Speakers
+Power Bank
+Power Banks
+Radio
+Receiver
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Rice Cookers
+Robotic Vacuum Cleaners
+Sandwich Maker
+Service
+Shaver Refills
+Smart & 3D TV
+Smart TVs
+Smart Watch
+Soundbar
+Soundbars
+Speaker Sets
+Speakers
+Steam Irons
+Straps
+Stream Generators
+Subwoofers
+Surround Sound
+Table Top - Dish Washer
+Toaster
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Tower Electric Fans
+Utilities Bag
+Visual Cables
+Wall Mounted
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Washer & Dryer Combination
+Watch
+Water Boilers
+Water Heaters
+Water Purifier Accessories
+Wearable Technology Accessories
+Weight Scale
+Wet & Dry Vacuum Cleaners
+Wine & Beverage Cooler"
+Output,Text,"QUICK MODE
+SAFE MODE",output,N,Y,"3D Blu-Ray Players
+Amplifier
+Blu-ray Players
+Cases & Covers
+Chargers / Wall Chargers
+DVD
+Home Theater 5.1Ch
+Micro HiFi
+Other
+Others
+Power Banks
+Receiver"
+Output Impedance,Text,,output_impedance,N,Y,For TV antenna (Digital box)
+Output S.P.L,Text,,output_spl,N,Y,Headphones
+Output Power(Watts),Text,Watts,output_power,N,Y,"Other
+Bluetooth Headsets
+Data Cables & Data Links"
+Odor removal system,Text,,odor_removal_system,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator 4 Doors up
+Refrigerator Side-By-Side"
+Operating System,Text,,operating_system,N,Y,"Rice Cookers
+Gaming Mouse
+Macbook Accessories
+Internet Software
+Electric Fan
+Microwave
+Oven"
+OPERATION RANGE,Text,,operation_range,N,Y,Bluetooth Headsets
+OTHER FUNCTION,Text,,other_function,N,Y,Digital Frames & Albums
+OUTPUT CURRENT,Text,,output_current,N,Y,Chargers / Wall Chargers
+OPTICAL SENSOR,Text,,optical_sensor,N,Y,Gaming Mouse
+OLYMPUS LUXURY LEATHER CASE FORMODEL,Text,,olympus_luxury_case,N,Y,Bags
+OLYMPUS CASE FOR MODEL,Text,,olympus_case_for_model,N,Y,Bags
+OUTPUT VOLTAGE,Text,,output_voltage,N,Y,"Camcorder Accessories
+Chargers / Wall Chargers"
+PictureInPicture,Text,,picture_in_picture,N,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Progressive Scan,Text,,progressive_scan,N,Y,"Home Theater 5.1Ch
+Blu-ray Players
+3D Blu-Ray Players
+DVD"
+Power cut-off system,Text,,power_cut_off_system,N,Y,Other
+Power Handling (Watts),Text,,power_handling_watts,N,Y,"Amplifier
+Bluetooth & Wireless Speaker
+CD & DVDs
+Centre Speakers
+Docks
+Headphones
+Home Theater 2.1Ch
+Home Theater 5.1Ch
+Karaoke Sets
+Main Speakers
+Micro HiFi
+Mini Disk HiFi
+Other Musical Accessories
+Others
+Portable Speakers
+Radio
+Receiver
+Soundbar
+Soundbars
+Speaker Sets
+Speakers
+Subwoofers"
+Power Handling Watts (RMS),Text,"RMS,Watts",power_handling_watts_rms,N,Y,"Amplifier
+CD & DVDs
+Home Theater 2.1Ch
+Main Speakers
+
+Micro HiFi
+
+Others
+Receiver
+Soundbars
+Speaker Sets"
+PLAYABILITY,Text,,playability,N,Y,DVD
+POWER OUTPUT,Text,,power_output,N,Y,"Micro HiFi
+Power Banks"
+POWER SUPPLY,Text,,power_supply,N,Y,Micro HiFi
+PLAYBACK FREQUENCY,Text,,playback_frequency,N,Y,Headphones
+PLUG,Text,,plug,N,Y,Headphones
+POWER HANDLING CAPACITY,Text,Watts,power_handling_capacity,N,Y,Headphones
+PLUG/JACK,Text,,plug_jack,N,Y,Other
+POLAR PATTERN,Text,,polar_pattern,N,Y,Other
+PVC Jacket,Text,,pvc_jacket,N,Y,Other
+Power(Watt),Text,Watts,power_watt,N,Y,"Cannister Vacuum Cleaners
+Coffee Maker
+Dry Irons
+Electric barbecue grill
+Electric Fan
+Electric Kettle
+Electric Pans
+Electric Pots
+Front Loader
+Hair Curlers
+Hair Dryers
+Handheld Vacuum Cleaners
+Microwave
+Multi-Purpose Cookers
+Oven
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Rice Cookers
+Robotic Vacuum Cleaners
+Sandwich Maker
+Steam Irons
+Stick Vacuum Cleaners
+Stream Generators
+Toaster
+Top Loader 2 Tubs
+Washer & Dryer Combination
+Water Boilers
+Water Heaters
+Wet & Dry Vacuum Cleaners"
+Pre-wash timer setting (Hours),Text,,pre_wash_timer_setting,N,Y,"Front Loader
+Top Loader 1 Tub
+Washer & Dryer Combination"
+Pre-heat timer setting (Hours),Text,,pre_heat_timer_setting,N,Y,Dryer - Condensing
+Port,Text,,port,N,Y,"Gaming Accessories
+Internet Software
+Mouse
+Other Accessories
+Headphones
+Keyboards
+Gaming Mouse"
+Power Input,Text,,power_input,N,Y,Power Banks
+Power,Text,,power,N,Y,"Refrigerator 4 Doors up
+Toaster
+Food processors & mixers
+Chargers
+Others
+Massage Chair"
+PACKAGE,Text,,package,N,Y,"Cases & Covers
+Bags"
+PHOTO STORAGE,Text,,photo_storage,N,Y,Digital Frames & Albums
+PICTURE ROTATION FUNCTION,Text,,picture_rotation_function,N,Y,Digital Frames & Albums
+Pack size,Text,,pack_size,N,Y,"Plug & Connectors
+Hubs"
+Product,Text,,product,N,Y,Mouse
+PROFILE,Text,,profile,N,Y,Bluetooth Headsets
+Program music player,Text,,program_music_player,N,Y,CD & DVDs
+PICKUPS,Text,,pickups,N,Y,Guitars
+Preamp,Text,,preamp,N,Y,Oven
+Peg,Text,,peg,N,Y,Guitars
+Pump Types,Text,,pump_types,N,Y,Automatic
+PUCJYO SWITCH,Text,,pucjyo_switch,N,Y,Guitars
+Propeller size (inch),Text,Inch,propeller_size,N,Y,"Electric Fan
+Wall / Ceiling Electric Fans
+Fan Accessories"
+IPHONE5 CASE FOR OPTICAL ACCESSORIES,Text,,iphone5_optical_accessories,,,Cases & Covers
+Quick Wash,Text,,quick_wash,N,Y,"Front Loader
+Washer & Dryer Combination"
+Radio Supported,Text,,radio_supported,N,Y,"Soundbars
+Home Theater 5.1Ch
+Others
+Mini Disk HiFi
+Micro HiFi
+Receiver
+Radio
+Docks
+Karaoke Sets
+CD & DVDs
+Other Musical Accessories"
+Rapid Defrost / Auto-Defrost,Text,,rapid_defost,N,Y,"Electric Fan
+Microwave
+Oven"
+RECEIVING RANGE,Text,,receiving_range,N,Y,For TV antenna (Digital box)
+Reduce vibration / noise,Text,,reduce_vibration,N,Y,"Front Loader
+Washer & Dryer Combination"
+RemoteControl,Text,,remote_control,N,Y,"Electric Fan
+Tower Electric Fans"
+Resistance,Text,ohms,resistance,N,Y,"Centre Speakers
+Headphones
+Home Theater 2.1Ch
+Main Speakers
+Others
+Radio
+Soundbar
+Soundbars
+Speaker Sets
+Subwoofers
+Surround Sound"
+Resolution,Text,,resolution,N,Y,"Gaming Accessories
+Digital Frames & Albums
+Other Accessories
+Keyboards
+Mouse"
+ResponseTime(MS),Text,,response_time,N,Y,"QLED TV
+Smart & 3D TV
+LED TVs
+Smart TVs"
+Room Size (m²),Text,,room_size,N,Y,"Wall Type (Inverter)
+Wall Type (Non-inverter)"
+ROTARY SWITCH,Text,,rotary_switch,N,Y,For TV antenna (Digital box)
+SCALE LENGTH,Text,,scale_length,N,Y,Guitars
+Scorched level,Text,,scorched_level,N,Y,Toaster
+Screen Resolution,Text/Dropdown,Pixel,screen_resolution,Y,Y,"QLED TV
+Smart & 3D TV
+LED TVs
+Smart TVs
+Camera Accessories"
+Screen Size,Text/Dropdown,inch,screen_size,Y,Y,"Smart & 3D TV
+LED TVs
+Smart TVs
+Digital Frames & Albums"
+Screen Size 16,Text,,screen_size16,Y,Y,LED TVs
+Security,Text,,security,N,Y,Internet Network Hardware
+Security System,Text,,security_system,N,Y,"Water Boilers
+Water Heaters"
+SelfCleaning,Text,,self_cleaning,N,Y,"Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Service"
+SENSITIVITY,Text,Db,sensitivity,N,Y,"Centre Speakers
+Hand Free Kits
+Headphones
+Home Theater 2.1Ch
+Main Speakers
+Microphone
+Other
+Others
+Radio
+Soundbar
+Soundbars
+Speaker Sets
+Subwoofers
+Surround Sound"
+Sensor Size,Text,,sensor_size,N,Y,Camera Accessories
+Sensor Types,Text,,sensor_types,N,Y,Camera Accessories
+SHIELD,Text,,shield,N,Y,Other
+Shower (level),Text,,shower,N,Y,Water Heaters
+Signal Input,Text,,signal_input,N,Y,Amplifiers
+Signal Range,Text,,signal_range,N,Y,"Microphone
+Internet Network Hardware"
+SILICON CASE FOR OLYMPUS CAMERAMODEL,Text,,,N,Y,Screen & Film Protectors
+Size of antenna,Text,,size_of_antenna,N,Y,Internet Network Hardware
+Size of loudspeaker,Text,,size_of_loudspeaker,N,Y,"Centre Speakers
+Home Theater 2.1Ch
+Main Speakers
+Others
+Radio
+Soundbar
+Soundbars
+Speaker Sets
+Subwoofers
+Surround Sound"
+Sleep Temperature Control,Text,,sleep_temperature_control,N,Y,"Wall Type (Inverter)
+Wall Type (Non-inverter)
+Service
+Portable Air Conditioners
+Floor/Ceiling Type (Inverter)"
+Slide Bar,Text,,slide_bar,N,Y,Water Heaters
+SLIDESHOW,Text,,slideshow,N,Y,Digital Frames & Albums
+SLOT 1,Text,,slot_1,N,Y,Card Readers
+SLOT 2,Text,,slot_2,N,Y,Card Readers
+SLOT 3,Text,,slot_3,N,Y,Card Readers
+Soaking Mode,Text,,soaking_mode,N,Y,"Front Loader
+Top Loader 2 Tubs
+Washer & Dryer Combination"
+Sound hole,Text,,sound_hole,N,Y,Guitars
+SOUND PRESSURE SENSITIVITY,Text,,sound_pressure_sensivity,N,Y,Headphones
+Sound System,Text,,sound_system,N,Y,"3D Blu-Ray Players
+Amplifier
+Blu-ray Players
+CD Players
+Docks
+DVD
+Headphones
+Home Theater 2.1Ch
+Home Theater 5.1Ch
+Karaoke Sets
+LED TVs
+Main Speakers
+Media Players
+Micro HiFi
+
+MP3
+Other Musical Accessories
+Others
+Radio
+Receiver
+Smart & 3D TV
+Smart TVs
+Soundbar
+Soundbars
+Speaker Sets
+Subwoofers"
+Soundboard (top),Text,,sound_board,N,Y,Guitars
+Soundboard (top) & Body sides (ribs),Text,,"sound_board
+body_sides",N,Y,Guitars
+SpeacialEffects/Feature,Text,,special_effects_feature,N,Y,Camera Accessories
+Speaker Connecting,Text,,speaker_connecting,N,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Speaker diameter,Text,,speaker_diameter,N,Y,"Headphones
+Hand Free Kits"
+Speaker driver,Text,,speaker_driver,N,Y,"Portable Speakers
+Bluetooth & Wireless Speaker
+Hand Free Kits"
+Speaker Type,Text,,speaker_type,N,Y,"Soundbars
+Home Theater 2.1Ch
+Others
+Home Theater 5.1Ch
+Radio
+Main Speakers
+Centre Speakers
+Speaker Sets
+Subwoofers
+Surround Sound
+Radio"
+SPEAKER UNIT,Text,,speaker_unit,N,Y,Speakers
+SPEC,Text,,spec,N,Y,Plugs
+Special Feature,Text,,special_feature,N,Y,"For TV antenna (Digital box)
+Headphones
+Cases & Covers
+Hand Free Kits
+Chargers / Wall Chargers
+Power Banks
+Macbook Accessories
+Camera Accessories
+CCTV & IP Cameras
+Mouse
+Headphones
+Utilities Bag"
+Special Function,Text,,special_function,N,Y,"Gaming Mouse
+Smart Watch
+Power Banks
+Gaming Accessories
+Keyboards
+Mouse"
+Special Washing Mode,Text,,special_washing_mode,N,Y,"Front Loader
+Top Loader 2 Tubs"
+Specification,Text,,specification,N,Y,Speakers
+Speed,Text,,speed,N,Y,Internet Software
+Spinning Cycle (rpm),Text,rpm,spinning_cycle,N,Y,"Front Loader
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Washer & Dryer Combination"
+Stand,Text,,stand,N,Y,Top Loader 2 Tubs
+Standardize,Text,,standardize,N,Y,"Steam Irons
+Stream Generators
+Dry Irons
+Multi-Purpose Cookers
+Electric Pans
+Blenders & Juicers
+Electric Kettle
+Electric Pots
+Hair Dryers
+Chargers"
+Standby Mode,Text,,standby_mode,N,Y,"Front Loader
+Washer & Dryer Combination"
+STAND BY TIME,Text,,standby_time,N,Y,Bluetooth Headsets
+Station Preset Memory Mode,Text,,station_preset_memory_mode,N,Y,"Soundbars
+Home Theater 5.1Ch
+Others
+Receiver
+Micro HiFi
+Mini Disk HiFi
+Radio
+Docks
+Karaoke Sets
+CD & DVDs
+Other Musical Accessories"
+Steam power (grams per minute),Text,"gram
+minute",steam_power,N,Y,"Steam Irons
+Stream Generators"
+STRING SCALE,Text,,string_scale,N,Y,Guitars
+Subwoofer,Text,,subwoofer,N,Y,"Soundbars
+Home Theater 5.1Ch
+Karaoke Sets"
+Sucking distance,Text,Watts,sucking_distance,N,Y,Automatic
+Sucking Power (Watts),Text,Watts,sucking_power,N,Y,"Cannister Vacuum Cleaners
+Stick Vacuum Cleaners
+Wet & Dry Vacuum Cleaners
+Robotic Vacuum Cleaners
+Handheld Vacuum Cleaners"
+Suction system,Text,,suction_system,N,Y,"Handheld Vacuum Cleaners
+Robotic Vacuum Cleaners
+Wet & Dry Vacuum Cleaners
+Stick Vacuum Cleaners
+Cannister Vacuum Cleaners"
+SUPPORT,Text,,support,N,Y,"Internet Network Hardware
+Bluetooth Headsets"
+Support Device,Text,,support_device,N,Y,"Headphones
+Portable Speakers
+Bluetooth & Wireless Speaker
+Smart Watch
+Other Accessories
+Mouse
+Speakers
+Diskettes"
+Support for NFC/IOS,Text,,NFC/IOS,N,Y,"Portable Speakers
+Bluetooth & Wireless Speaker"
+Supported file types,Text,,supported_file_types,N,Y,"Media Players
+CD Players
+MP3"
+SupportVersion,Text,,support_version,N,Y,Other
+Swing system,Text,,swing_system,N,Y,Food processors & mixers
+Switching Power Supply,Text,,switching_power_supply,N,Y,External Device
+SYSTEM,Text,,system,N,Y,"Headphones
+Mouse
+Keyboards
+Headphones
+Other Accessories"
+System support,Text,,system_support,N,Y,"Portable Speakers
+Bluetooth & Wireless Speaker"
+TALK TIME,Text,,talk_time,N,Y,Bluetooth Headsets
+Tank capacity (ml),Text,ml,tank_capacity,N,Y,"Steam Irons
+Stream Generators"
+Technology,Text,,technology,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Freezers
+Dryer - Venting
+Dryer - Condensing
+Shavers
+Refrigerator Side-By-Side"
+Temperature control,Text,,temperature_control,N,Y,"Water Boilers
+Water Heaters"
+TERMINATION,Text,,termination,N,Y,Other
+Test,Text,,test,N,Y,Air-Conditioner Accessories
+THAI Menu,Text,,thai_menu,N,Y,"Blu-ray Players
+3D Blu-Ray Players
+DVD"
+Thermo Fuse,Text,,thermo_fuse,N,Y,"Electric Fan
+Tower Electric Fans"
+Timer Off,Text,Hour,timer_off,N,Y,"Electric Fan
+Air Purifiers
+Air Purifiers Accessories"
+Timer On,Text,Hour,timer_on,N,Y,"Electric Fan
+Air Purifiers
+Air Purifiers Accessories"
+Timer System,Text,,timer_system,N,Y,"Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Portable Air Conditioners
+Service"
+TOP,Text,,top,N,Y,Guitars
+Toaster Mode,Text,,toaster_mode,N,Y,Toaster
+Transmission range,Text,,transmission_range,N,Y,Automatic
+Tube Cleaning Mode,Text,,tube_cleaning_mode,N,Y,"Front Loader
+Washer & Dryer Combination"
+Tuner Type,Text,,tuner_type,N,Y,"Soundbars
+Home Theater 5.1Ch
+Others
+Micro HiFi
+Mini Disk HiFi
+Receiver
+Radio
+Docks
+Karaoke Sets
+CD & DVDs
+Other Musical Accessories"
+TUNING MACHINES,Text,,tuning_machines,N,Y,Guitars
+Type,Text,,type,N,Y,"Action Camera
+Apple Watch
+Apple Watch Accessories
+Bags
+Batteries
+Batteries & Chargers
+Bluetooth & Wireless Speaker
+Camera Accessories
+Cases & Covers
+CCTV & IP Cameras
+Chargers
+Chargers / Wall Chargers
+Cleaners
+Coffee Maker
+Connected Toy
+Connectors
+Deep Fryers
+Diskettes
+Drone
+Dry Box & Cabinets
+Electric barbecue grill
+Electric Fan
+Electric Kettle
+Electric stove / Gas Range
+Electric Toothbrushes
+External Device
+External Hard Disks
+Fan Accessories
+Films
+Filters
+Food processors & mixers
+For TV antenna (Digital box)
+Game Console
+Gaming Accessies
+Gaming Accessories
+Gaming Headset
+Gaming Keyboard
+Gaming Mouse
+Guitar Accessories
+Hair Clippers
+Hair Curlers
+Hair Dryers
+Hand Free Kits
+Headphones
+Hobs
+Home Theater 2.1Ch
+Hoods
+Hubs
+Internet Network Hardware
+Internet Software
+iPad Accessories
+iPhone Accessories
+Keyboards
+Lens Caps
+Macbook Accessories
+Main Speakers
+Microphone
+Mouse
+Note Pad
+Other
+Other Accessories
+Other Health Care
+Others
+Plug & Connectors
+Plugs
+Polaroid Cameras (Instant Camera)
+Portable Speakers
+Power Bank
+Power Banks
+Radio
+Smart Watch
+Soundbar
+Soundbars
+Speaker Sets
+Speakers
+Straps
+Subwoofers
+Toaster
+Tower Electric Fans
+Tripods
+Utilities Bag
+Visual Cables
+Wall / Ceiling Electric Fans
+Watch
+Water Purifier Accessories
+Wearable Technology Accessories"
+Types,Text,,types,N,Y,"Weight Scale
+Hair Dryers"
+TYPE OF MATERIAL,Text,,type_of_material,N,Y,Other
+Type of shelves,Text,,type_of_shelves,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator 4 Doors up
+Refrigerator Side-By-Side
+Wine & Beverage Cooler
+Freezers"
+UNIT SPECIFICATIONS,Text,,unit_specifications,N,Y,Headphones
+USB,Text,,usb,N,Y,"Home Theater 5.1Ch
+Others
+Camera Accessories"
+USB CABLE INPUT,Text,,usb_cable_input,N,Y,Chargers / Wall Chargers
+USB Connecting,Text,,usb_connecting,N,Y,"Radio
+CD & DVDs"
+USB Interface,Text,,usb_interface,N,Y,"Soundbars
+Home Theater 5.1Ch
+Receiver
+Mini Disk HiFi
+Micro HiFi
+Docks
+Karaoke Sets"
+USE ELECTRICAL SUPPLY VOLTAGE,Text,,use_electricity_supply_voltage,N,Y,Other
+Vegetable Chilled Capacity (liter),Text,liter,vegetable_chilled_capacity,N,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side"
+VERSION/COMPLIANT,Text,,version/compliant,N,Y,Bluetooth Headsets
+VIBRATO SYSTEM,Text,,vibrator_system,N,Y,Guitars
+View angle (degrees),Text,degrees,view_angle,N,Y,"QLED TV
+Smart & 3D TV
+LED TVs
+Smart TVs"
+Voice Coil,Text,,voice_coli,N,Y,Headphones
+VOLUME,Text,,volume,N,Y,Subwoofers
+Volume level (Decibel),Text,,volume_level,N,Y,Table Top - Dish Washer
+Wall Charge,Text,,wall_charge,N,Y,Chargers / Wall Chargers
+WARRANTY,Text,"Month
+Year",warranty,N,Y,"QLED TV
+Action Camera
+Air Purifiers
+Air Purifiers Accessories
+Automatic
+Bags
+Batteries
+Blenders & Juicers
+Blood Pressure Measuring
+Bluetooth & Wireless Speaker
+Built-in - Dish Washer
+Camera Accessories
+Cases & Covers
+CCTV & IP Cameras
+Chargers / Wall Chargers
+Coffee Maker
+Connectors
+Deep Fryers
+Dish Washers
+Diskettes
+Drone
+Dry Irons
+Dryer - Condensing
+Dryer - Venting
+Electric Fan
+Electric Kettle
+Electric Pans
+Electric Pots
+Electric stove / Gas Range
+Electric Toothbrushes
+External Device
+External Hard Disks
+Flash Drives
+For TV antenna (Digital box)
+Free Stand - Dish Washer
+Freezers
+Front Loader
+Game Console
+Gaming Accessies
+Gaming Accessories
+Gaming Headset
+Gaming Keyboard
+Gaming Mouse
+Hair Clippers
+Hair Dryers
+Hand Free Kits
+Headphones
+Hobs
+Hood & HOB
+Hoods
+Hubs
+Internet Network Hardware
+Internet Software
+iPad Accessories
+Keyboards
+LED TVs
+Lens Caps
+Macbook Accessories
+Memory Cards
+Microphone
+Microwave
+Mouse
+Multi-Purpose Cookers
+Other
+Other Accessories
+Oven
+Plug & Connectors
+Plugs
+Polaroid Cameras (Instant Camera)
+Portable Speakers
+Power Bank
+Power Banks
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Rice Cookers
+Robotic Vacuum Cleaners
+Sandwich Maker
+Smart & 3D TV
+Smart TVs
+Smart Watch
+Speakers
+Steam Irons
+Stream Generators
+Table Top - Dish Washer
+Toaster
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Utilities Bag
+Visual Cables
+Washer & Dryer Combination
+Watch
+Wearable Technology Accessories"
+Washing Program,Text,,washing_program,N,Y,"Front Loader
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Washer & Dryer Combination"
+Water Dispenser,Text,,water_dispenser,N,Y,"Refrigerator 2 Doors
+Refrigerator 4 Doors up
+Refrigerator Side-By-Side
+Electric Kettle
+Electric Pots
+Coffee Maker"
+Water level,Text,,water_level,N,Y,"Free Stand - Dish Washer
+Built-in - Dish Washer
+Table Top - Dish Washer
+Dish Washers"
+Water level adjustment,Text,,water_level_adjustment,N,Y,"Front Loader
+Top Loader 1 Tub
+Top Loader 2 Tubs"
+Water Temperature,Text,degree,water_temperature,N,Y,Dish Washers
+Water temperature adjustment (degrees),Text,degree,water_temperature_adjustment,N,Y,"Front Loader
+Washer & Dryer Combination"
+WATT,Text,,watt,N,Y,Speakers
+Web Browser,Text,,web_browser,N,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+WEIGHT,Text,"kg
+g
+approx",weight,N,Y,"QLED TV
+3D Blu-Ray Players
+Air Purifiers
+Air Purifiers Accessories
+Blu-ray Players
+Camcorder Accessories
+Camera Accessories
+Cannister Vacuum Cleaners
+CD & DVDs
+Deep Fryers
+Docks
+DVD
+Electric Fan
+Freezers
+Hand Free Kits
+Handheld Vacuum Cleaners
+Hobs
+Home Theater 2.1Ch
+Home Theater 5.1Ch
+Hood & HOB
+Karaoke Sets
+LED TVs
+Micro HiFi
+Microwave
+Oven
+Receiver
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Robotic Vacuum Cleaners
+Smart & 3D TV
+Smart TVs
+Soundbar
+Soundbars
+Speaker Sets
+Stick Vacuum Cleaners
+Subwoofers
+Wet & Dry Vacuum Cleaners"
+Wind level,Text,,wind_level,N,Y,"Hair Dryers
+Hair Curlers"
+WIRE LENGTH,Text,,wire_length,N,Y,"Microphone
+Other"
+Wireless,Text,,wireless,N,Y,"Smart & 3D TV
+LED TVs
+Smart TVs"
+writing speed,Text,,writing_speed,N,Y,Flash Drives
+YOU WILL ALWAYS YOUR NOTES TO HANDTO HAND,Text,,your_notes_to_hand,N,Y,External Device
+1 ROUND+2FLAT PLUG TO MULTI USAGEJACK FOR,Text,,1round_2flat_plug,N,Y,Other
+1BIG ROUND PLUG+2 SMALL ROUND PLUGTO MULTI USAGE JACK FOR,Text,,1biground_2small,N,Y,Other
+2 ROUND PLUG TO MULTI USAGEJACK FOR,Text,,2round_plug,N,Y,Other
+2FLAT PLUG TO MULTI USAGEJACK FOR,Text,,2flat_plug,N,Y,Other
+2P ROUND PLUG TO MULTI USAGEJACK FOR,Text,,2p_round_plug,N,Y,Other
+3 ROUND PLUG TO MULTI USAGE JACKFOR,Text,,3round_plug,N,Y,Other
+3D,Text/Dropdown,,3D,Y,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+3FLAT PLUG TO MULTI USAGE JACKFOR,Text,,3flat_plug,N,Y,Other
+3IN1 CARD READER,Text,,3in1_card_reader,N,Y,Micro HiFi

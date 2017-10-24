@@ -1,0 +1,13 @@
+Payment methods,multiselect,"Full payment
+Installment
+CoD
+123 Bank transfer",payment_method,Y,Y,General,0
+Delivery methods,multiselect,"Standard
+Express
+PWB Home delivery",delivery_method,Y,Y,General,0
+Free Gift,select,,free_gift,N,Y,General,1
+Free installation,select,,free_installation,N,Y,General,1
+Free Delivery,select,,free_delivery,N,Y,General,1
+1 Year Warranty,select,,1_year_warranty,N,Y,General,1
+Easy Payment,select,,easy_payment,N,Y,General,1
+Click & Collect,select,,click_collect,N,Y,General,1

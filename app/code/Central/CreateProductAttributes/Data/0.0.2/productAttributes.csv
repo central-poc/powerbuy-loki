@@ -1,0 +1,158 @@
+Android,select,,android3D,Y,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+BTU Range,select,,btu_range,Y,Y,Wall Type (Inverter)
+Color,select,,color,Y,Y,"Action Camera
+Apple Watch
+Apple Watch Accessories
+Bags
+Bluetooth & Wireless Speaker
+Built-in - Dish Washer
+Connected Toy
+Connectors
+Cases & Covers
+CCTV & IP Cameras
+Chargers/Wall Chargers
+Deep Fryers
+Gaming Headset
+Gaming Accessies
+Gaming Keyboard
+Gaming Mouse
+Game Console
+Polaroid Cameras (Instant Camera)
+Electric Toothbrushes
+Hood & HOB
+Hobs
+Dish Washers
+Oven
+Electric Fan
+Table Top - Dish Washer
+Built-in - Dish Washer
+Free Stand - Dish Washer
+For TV antenna (Digital box)
+Headphones
+Portable Speakers
+Microphone
+Visual Cables
+Other
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator 4 Doors up
+Refrigerator Side-By-Side
+Freezers
+Water Purifier Accessories
+Smart Watch
+Watch
+Wearable Technology Accessories
+Drone
+Power Bank
+Batteries
+Hand Free Kits
+iPhone Accessories
+External Device
+iPad Accessories
+Macbook Accessories
+Tripods
+Lens Caps
+Straps
+Cleaners
+Films
+Gaming Accessories
+Note Pad
+Mouse
+Other Accessories
+External Hard Disks
+Keyboards
+Diskettes
+Plugs
+Speakers
+Internet Software
+Utilities Bag
+Guitars"
+Color Available,select,,color_available,N,Y,Headphones
+Capacity (Cubic),select,,capacity,Y,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Wine & Beverage Cooler
+Freezers
+Refrigerators Inverter"
+Cooling Capacity (BTU),select,,cooling_capacity,Y,Y,"Cassette Type
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Portable Air Conditioners
+Service"
+Capacity,select,"GB
+Liters",capacity,Y,Y,"Accessories for Computers
+Coffee Maker
+Oven
+Microwave
+Rice Cookers
+Electric Kettle
+Electric Pots
+Camera Accessories
+Flash Drives
+External Hard Disks
+Automatic"
+Display Screen,select,Inches,display_screen,Y,Y,"QLED TV
+4K Ultra HD TV
+Smart & 3D TV
+Smart TVs
+LED TVs
+Washer & Dryer Combination
+Weight Scale
+Camera Accessories
+CD & DVDs"
+Disc Type,select,,disc_type,Y,Y,"Soundbars
+Home Theater 5.1Ch
+Others
+Blu-ray Players
+3D Blu-Ray Players
+DVD
+Mini Disk HiFi
+Micro HiFi
+Main Speakers
+Docks
+CD & DVDs
+Other Musical Accessories"
+Drum size(kg),select,kg,drum_size,Y,Y,"Front Loader
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Washer & Dryer Combination
+Dryer - Condensing"
+For Room size (Sqm.),select,sqm,for_room_size,Y,Y,"Wall Type (Inverter)
+Wall Type (Non-inverter)
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Portable Air Conditioners
+Cassette Type
+Service
+Air Purifiers Accessories
+Air Purifiers"
+Inverter Range(BTU),select,,inverter_range,Y,Y,"Floor/Ceiling Type (Inverter)
+Wall Type (Inverter)
+Wall Type (Non-inverter)"
+Length(m),select,m,length,Y,Y,"Data Cables & Data Links
+Chargers/Wall Chargers
+Other"
+Maximum Power,select,WATT,maximum_power,Y,Y,"Headphones
+Hoods
+Free Stand - Dish Washer
+Built-in - Dish Washer
+Table Top - Dish Washer
+Hobs"
+Screen Resolution,select,Pixel,screen_resolution,Y,Y,"QLED TV
+Smart & 3D TV
+LED TVs
+Smart TVs
+Camera Accessories"
+Screen Size,select,inch,screen_size,Y,Y,"Smart & 3D TV
+LED TVs
+Smart TVs"
+3D,select,,3D,Y,Y,"Smart & 3D TV
+Smart TVs
+LED TVs"
+Screen Size 16,Text,,screen_size16,Y,Y,LED TVs

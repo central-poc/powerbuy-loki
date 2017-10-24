@@ -1,0 +1,518 @@
+Dust bag capacity (Liters),Text,,dust_bag_capacity,N,Y,"Handheld Vacuum Cleaners
+Robotic Vacuum Cleaners
+Stick Vacuum Cleaners
+Wet & Dry Vacuum Cleaners
+Cannister Vacuum Cleaners"
+Image Resolution (Pixels),Text,,image_resolution,N,Y,Camera Accessories
+Moter Power (Watt),Text,,motor_power,N,Y,"Automatic
+Blenders & Juicers"
+Number of electric stove (head),Text,head,number_of_electric_stove_head,N,Y,"Electric stove / Gas Range
+Hobs"
+Output Power (Watts),Text,,output_power_watts,N,Y,Other
+Power (Watt),Text,,power_watt,N,Y,"Cannister Vacuum Cleaners
+Coffee Maker
+Dry Irons
+Electric barbecue grill
+Electric Fan
+Electric Kettle
+Electric Pans
+Electric Pots
+Front Loader
+Hair Curlers
+Hair Dryers
+Handheld Vacuum Cleaners
+Microwave
+Multi-Purpose Cookers
+Oven
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Rice Cookers
+Robotic Vacuum Cleaners
+Sandwich Maker
+Steam Irons
+Stick Vacuum Cleaners
+Stream Generators
+Toaster
+Top Loader 2 Tubs
+Washer & Dryer Combination
+Water Boilers
+Water Heaters
+Wet & Dry Vacuum Cleaners"
+Writing speed,Text,,writing_speed,N,Y,Flash Drives
+Capacity,select,,capacity,Y,Y,"Camera Accessories
+Flash Drives
+External Hard Disks
+Automatic"
+Capacity (Cubic),select,,capacity_cubic,Y,Y,"Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Wine & Beverage Cooler
+Freezers
+Refrigerators Inverter"
+Capacity (GB),select,,capacity_gb,Y,Y,"Memory Cards
+Accessories for Computers
+External Hard Disks
+Flash Drives"
+Capacity (kg) drying,select,,capacity_kg_drying,Y,Y,Washer & Dryer Combination
+Capacity (Liter),select,,capacity_liter,Y,Y,"Electric Fan
+Microwave
+Oven
+Coffee Maker
+Electric Kettle
+Electric Pots
+Rice Cookers"
+Capacity (Liters),select,,capacity_liters,Y,Y,"Electric Fan
+Oven
+Rice Cookers
+Hood & HOB"
+Cord Length,Text,,cord_length,N,Y,"Diskettes
+Hand Free Kits
+Headphones
+Headphones
+Microphone"
+Cord Length (m.),Text,,cord_length_m,N,Y,"Dry Irons
+Handheld Vacuum Cleaners
+Other
+Steam Irons
+Stream Generators
+Wet & Dry Vacuum Cleaners"
+Dimension,Text,,dimension,N,Y,"Home Theater 5.1Ch
+Hoods
+Hobs"
+Dimension (Cm.),Text,,dimension_cm,N,Y,"QLED TV
+3D Blu-Ray Players
+Air Purifiers
+Air Purifiers Accessories
+Amplifier
+Audio Cables
+Blenders & Juicers
+Bluetooth & Wireless Speaker
+Blu-ray Players
+Built-in - Dish Washer
+Camcorder Accessories
+Camera Accessories
+Cannister Vacuum Cleaners
+Card Readers
+Cases & Covers
+Cassette Type
+CCTV & IP Cameras
+CD & DVDs
+CD Players
+Centre Speakers
+Chargers / Wall Chargers
+Coffee Maker
+Data Cables & Data Links
+Deep Fryers
+Dish Washers
+Docks
+Dry Irons
+Dryer - Condensing
+Dryer - Venting
+DVD
+Electric barbecue grill
+Electric Fan
+Electric Kettle
+Electric Pots
+Electric stove / Gas Range
+Flash Drives
+Floor/Ceiling Type (Inverter)
+Floor/Ceiling Type (Non-inverter)
+Food processors & mixers
+Free Stand - Dish Washer
+Freezers
+Front Loader
+Guitars
+Hair Dryers
+Hand Free Kits
+Handheld Vacuum Cleaners
+Headphones
+Hobs
+Home Theater 2.1Ch
+Home Theater 5.1Ch
+Hood & HOB
+Hoods
+Karaoke Sets
+Keyboards
+LED TVs
+Main Speakers
+Massage Chair
+Media Players
+Memory Cards
+Micro HiFi
+Microwave
+Microwave Accessories
+Miscellaneous
+Mouse
+MP3
+Other
+Other Accessories
+Others
+Oven
+Pianos
+Plastic
+Portable Air Conditioners
+Portable Speakers
+Power Banks
+Radio
+Receiver
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Rice Cookers
+Robotic Vacuum Cleaners
+Service
+Smart & 3D TV
+Smart TVs
+Soundbar
+Soundbars
+Speaker Sets
+Speakers
+Stainless
+Steam Irons
+Stick Vacuum Cleaners
+Stream Generators
+Subwoofers
+Surround Sound
+Table Top - Dish Washer
+Top Loader 1 Tub
+Top Loader 2 Tubs
+Utilities Bag
+Wall Mounted
+Wall Type (Inverter)
+Wall Type (Non-inverter)
+Washer & Dryer Combination
+Water Cooler
+Water Heaters
+Water Purifiers
+Weight Scale
+Wet & Dry Vacuum Cleaners
+Wine & Beverage Cooler"
+Dimension (Include Stand),Text,,dimension_include_stand,N,Y,"QLED TV
+Smart & 3D TV
+Smart TVs
+LED TVs"
+Dimension (Include Stand)(Cm.),Text,,dimension_include_stand_cm,N,Y,Smart TVs
+Dimension (mm.),Text,,dimension_mm,N,Y,Speaker Sets
+"Dimension 8"" (800X480),15",Text,,dimension_8inch_15,N,Y,Digital Frames & Albums
+DIMENSION(APPROX),Text,,dimension_approx,N,Y,Camcorder Accessories
+Display Screen,select,,display_screen,Y,Y,"CD & DVDs
+Washer & Dryer Combination"
+Display Screen,select,,display_screen,Y,Y,"CD & DVDs
+Washer & Dryer Combination"
+Display Screen (Cm.),select,,display_screen_cm,Y,Y,Weight Scale
+Display Screen (Inches),select,,display_screen_inches,Y,Y,"4K Ultra HD TV
+Camera Accessories
+LED TVs
+QLED TV
+Smart & 3D TV
+Smart TVs"
+Drill Size,Text,,drill_size,N,Y,"Hobs
+Hoods"
+Drill Size (Cm.),Text,,drill_size_cm,N,Y,"Hobs
+Hoods
+Hood & HOB"
+Length,select,,length,Y,Y,Other
+Length (m.),select,,length_m,Y,Y,"Data Cables & Data Links
+Chargers / Wall Chargers"
+Maximum Power ,select,,maximum_power,Y,Y,"Hoods
+Headphones"
+Maximum Power (Watt),select,,maximum_power_watt,Y,Y,"Free Stand - Dish Washer
+Built-in - Dish Washer
+Table Top - Dish Washer
+Hobs
+Hoods"
+Number of electric stove,Text,,number_of_electric_stove,N,N,"Electric stove / Gas Range
+Hobs"
+Number of electric stove (head),Text,head,number_of_electric_stove_head,N,Y,"Electric stove / Gas Range
+Hobs"
+Output,Text,,output,N,Y,"3D Blu-Ray Players
+Amplifier
+Blu-ray Players
+Cases & Covers
+Chargers / Wall Chargers
+DVD
+Home Theater 5.1Ch
+Micro HiFi
+Other
+Others
+Power Banks
+Receiver"
+OUTPUT (QUICK MODE),Text,,output_quick_mode,N,Y,Power Banks
+OUTPUT (SAFE MODE),Text,,output_safe_mode,N,Y,Power Banks
+OUTPUT POWER,,,output_power,N,N,"Bluetooth Headsets
+Data Cables & Data Links"
+Output Power (Watts),Text,,output_power_watts,N,Y,Other
+Power Handling,Text,,power_handling,N,Y,"Portable Speakers
+Headphones
+Main Speakers
+Bluetooth & Wireless Speaker
+Speakers"
+Power Handling (RMS),Text,,power_handling_rms,N,Y,"Home Theater 5.1Ch
+Home Theater 2.1Ch
+Amplifier
+Receiver
+Speaker Sets
+CD & DVDs"
+Power Handling Watts (RMS),Text,,power_handling_watts_rms,N,Y,"Soundbars
+Home Theater 5.1Ch
+Others
+Micro HiFi
+Receiver
+Amplifier
+Main Speakers"
+Power,Text,,power,N,Y,"Refrigerator 4 Doors up
+Toaster
+Food processors & mixers
+Chargers
+Others
+Massage Chair"
+Power (Watt),Text,,power_watt,N,Y,"Cannister Vacuum Cleaners
+Coffee Maker
+Dry Irons
+Electric barbecue grill
+Electric Fan
+Electric Kettle
+Electric Pans
+Electric Pots
+Front Loader
+Hair Curlers
+Hair Dryers
+Handheld Vacuum Cleaners
+Microwave
+Multi-Purpose Cookers
+Oven
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Rice Cookers
+Robotic Vacuum Cleaners
+Sandwich Maker
+Steam Irons
+Stick Vacuum Cleaners
+Stream Generators
+Toaster
+Top Loader 2 Tubs
+Washer & Dryer Combination
+Water Boilers
+Water Heaters
+Wet & Dry Vacuum Cleaners"
+Resistance,Text,,resistance,N,Y,"Home Theater 2.1Ch
+Headphones
+Speaker Sets
+Main Speakers
+Subwoofers"
+Resistance (Ohms),Text,,resistance_ohms,N,Y,"Centre Speakers
+Home Theater 2.1Ch
+Main Speakers
+Others
+Radio
+Soundbar
+Soundbars
+Speaker Sets
+Subwoofers
+Surround Sound"
+Screen Resolution,select,,screen_resolution,Y,Y,"QLED TV
+Smart & 3D TV
+LED TVs
+Smart TVs"
+Screen Resolution (Pixel),select,,screen_resolution_pixel,Y,Y,Camera Accessories
+Sensitivity,Text,,sensitivity,N,Y,"Home Theater 2.1Ch
+Headphones
+Main Speakers
+Speaker Sets
+Subwoofers
+Microphone
+Other
+Hand Free Kits"
+Sensitivity (Db.),Text,,sensitivity_db,N,Y,"Centre Speakers
+Home Theater 2.1Ch
+Main Speakers
+Others
+Radio
+Soundbar
+Soundbars
+Speaker Sets
+Subwoofers
+Surround Sound"
+Timer Off ,Text,,timer_off,N,Y,"Electric Fan
+Air Purifiers"
+Timer Off (Hours),Text,,timer_off_hours,N,Y,Electric Fan
+Timer Off / On,Text,,timer_off_on,N,Y,"Air Purifiers
+Air Purifiers Accessories"
+Timer Off / On (Hours),Text,,timer_off_on_hours,N,Y,Electric Fan
+Warranty (Month),Text,,warranty_month,N,Y,Electric Toothbrushes
+Adjusting the wind level,Text,,adjusting_the_wind_level,N,Y,"Electric Fan
+Hair Dryers
+Hoods
+Tower Electric Fans"
+Adjusting the wind level (level),Text,,adjusting_the_wind_level2,N,Y,"Electric Fan
+Wall / Ceiling Electric Fans"
+SILICON CASE FOR OLYMPUS CAMERAMODEL,Text,,silicon_case_olympus,N,Y,Screen & Film Protectors
+Warranty (Year),Text,,warranty_year,N,Y,"QLED TV
+Action Camera
+Bags
+Camera Accessories
+Cases & Covers
+Chargers / Wall Chargers
+Connectors
+Diskettes
+Game Console
+Gaming Accessies
+Gaming Headset
+Gaming Keyboard
+Gaming Mouse
+LED TVs
+Lens Caps
+Polaroid Cameras (Instant Camera)
+Power Banks
+Smart & 3D TV
+Smart TVs
+Smart Watch
+Speakers
+Visual Cables
+Watch
+Wearable Technology Accessories"
+Weight (g.),Text,,weight_g,N,Y,Camera Accessories
+Weight (kg.),Text,,weight_kg,N,Y,"QLED TV
+3D Blu-Ray Players
+Air Purifiers
+Air Purifiers Accessories
+Blu-ray Players
+Cannister Vacuum Cleaners
+CD & DVDs
+Deep Fryers
+Docks
+DVD
+Electric Fan
+Freezers
+Handheld Vacuum Cleaners
+Hobs
+Home Theater 2.1Ch
+Home Theater 5.1Ch
+Hood & HOB
+Karaoke Sets
+LED TVs
+Micro HiFi
+Microwave
+Oven
+Receiver
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator Side-By-Side
+Robotic Vacuum Cleaners
+Smart & 3D TV
+Smart TVs
+Soundbar
+Soundbars
+Speaker Sets
+Stick Vacuum Cleaners
+Subwoofers
+Wet & Dry Vacuum Cleaners"
+WEIGHT(APPROX),Text,,weight_approx,N,Y,Camcorder Accessories
+Capacity (Liter),select,,capacity_liter,Y,Y,"Electric Fan
+Microwave
+Oven
+Coffee Maker
+Electric Kettle
+Electric Pots
+Rice Cookers"
+Color,select,,color,Y,Y,"Action Camera
+Apple Watch
+Apple Watch Accessories
+Bags
+Bluetooth & Wireless Speaker
+Built-in - Dish Washer
+Connected Toy
+Connectors
+Cases & Covers
+CCTV & IP Cameras
+Chargers / Wall Chargers
+Deep Fryers
+Gaming Headset
+Gaming Accessies
+Gaming Keyboard
+Game Console
+Polaroid Cameras (Instant Camera)
+Electric Toothbrushes
+Hood & HOB
+Hobs
+Dish Washers
+Oven
+Electric Fan
+Table Top - Dish Washer
+Built-in - Dish Washer
+Free Stand - Dish Washer
+For TV antenna (Digital box)
+Headphones
+Portable Speakers
+Microphone
+Visual Cables
+Other
+Refrigerator 1 Door
+Refrigerator 2 Doors
+Refrigerator 3 Doors
+Refrigerator 4 Doors up
+Refrigerator Side-By-Side
+Freezers
+Water Purifier Accessories
+Smart Watch
+Watch
+Wearable Technology Accessories
+Drone
+Power Bank
+Batteries
+Hand Free Kits
+iPhone Accessories
+External Device
+iPad Accessories
+Macbook Accessories
+Tripods
+Lens Caps
+Straps
+Cleaners
+Films
+Gaming Accessories
+Mouse
+Other Accessories
+External Hard Disks
+Keyboards
+Diskettes
+Plugs
+Speakers
+Internet Software
+Utilities Bag
+Guitars"
+Warranty,Text,,warranty,N,Y,"Bluetooth & Wireless Speaker
+Built-in - Dish Washer
+CCTV & IP Cameras
+Chargers / Wall Chargers
+Diskettes
+Drone
+Electric stove / Gas Range
+External Device
+External Hard Disks
+Flash Drives
+Free Stand - Dish Washer
+Hand Free Kits
+Headphones
+Hobs
+Hood & HOB
+Hoods
+iPad Accessories
+Keyboards
+Mouse
+Other
+Portable Speakers
+Power Banks
+Speakers
+Table Top - Dish Washer
+Utilities Bag
+Water Cooler"
+Preamp,Text,,preamp,N,Y,"Oven
+Guitars"
