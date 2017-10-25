@@ -31,15 +31,22 @@ class Validator
 
     function aroundIsAttributeValid($subject, $proceed, $attrCode, array $attrParams, array $rowData)
     {
-        if ($attrCode == 'brand')
+        $attributeType = $attrParams['type'] ?? '';
+        if (in_array($attributeType, ['select'])) 
         {
-            $valueValid = array_key_exists('brand', $rowData) && !empty($rowData['brand']);
-            if ($valueValid) {
-                $this->attributeOptionHelper->createOrGetId('brand', $rowData['brand']);
-                $options = $this->productAttributeRepository->get('brand')->getOptions();
-                foreach ($options as $option) {
-                    $attrParams['options'][strtolower($option->getLabel())] = $option->getValue();
-                }
+            $rawValue = $rowData[$attrCode] ?? '';
+            $values = str_getcsv($rawValue, ",", '"');
+            $cleanValues = array_filter($values, function($value) { 
+                return !empty($value); }
+            );
+
+            foreach($cleanValues as $value) 
+            {
+                $this->attributeOptionHelper->createOrGetId($attrCode, $value);
+            }
+            $options = $this->productAttributeRepository->get($attrCode)->getOptions();
+            foreach ($options as $option) {
+                $attrParams['options'][strtolower($option->getLabel())] = $option->getValue();
             }
         }
 
