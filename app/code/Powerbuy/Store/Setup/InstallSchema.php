@@ -23,8 +23,8 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
             'Entity ID'
         )->addColumn(
             'StoreCode',
-            Table::TYPE_INTEGER,
-            null,
+            Table::TYPE_TEXT,
+            5,
             [ 'nullable' => false, ],
             'store id from MMS'
         )->addColumn(

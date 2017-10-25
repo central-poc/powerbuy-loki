@@ -31,9 +31,9 @@ class InstallSchema implements InstallSchemaInterface
             'SKU'
         )->addColumn(
             'store_id',
-            \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
-            null,
-            [ 'nullable' => false, 'unsigned' => true, ],
+            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+            5,
+            [ 'nullable' => false],
             'Store ID'
         )->addColumn(
             'barcode',
@@ -57,13 +57,13 @@ class InstallSchema implements InstallSchemaInterface
             'special_price_from',
             \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
             null,
-            [ 'nullable' => true, 'default' => \Magento\Framework\DB\Ddl\Table::TIMESTAMP_INIT_UPDATE, ],
+            [ 'nullable' => true, ],
             'Special From'
         )->addColumn(
             'special_price_to',
             \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
             null,
-            [ 'nullable' => true, 'default' => \Magento\Framework\DB\Ddl\Table::TIMESTAMP_INIT_UPDATE, ],
+            [ 'nullable' => true, ],
             'Special To'
         )->addColumn(
             'stock_available',
