@@ -80,7 +80,7 @@ class StoreRepository implements \Powerbuy\Store\Api\StoreRepositoryInterface
              ];
              $result[] = $storeItem;
          }
- 
+
          return $result;
      }
 }

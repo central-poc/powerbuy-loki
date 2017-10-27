@@ -28,53 +28,47 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
             [ 'nullable' => false, ],
             'store id from MMS'
         )->addColumn(
-            'Name',
+            'name',
             Table::TYPE_TEXT,
             255,
             [ 'nullable' => false, ],
             'Store Name'
         )->addColumn(
-            'NameEN',
-            Table::TYPE_TEXT,
-            255,
-            [ 'nullable' => false, ],
-            'Store Name (EN)'
-        )->addColumn(
-            'Description',
+            'description',
             Table::TYPE_TEXT,
             255,
             [ 'nullable' => false, ],
             'Description'
         )->addColumn(
-            'Address',
+            'address',
             Table::TYPE_TEXT,
             255,
             [ 'nullable' => false, ],
             'Address'
         )->addColumn(
-            'AddressEN',
-            Table::TYPE_TEXT,
-            255,
-            [ 'nullable' => false, ],
-            'Address (EN)'
-        )->addColumn(
-            'OpenTime',
+            'open_time',
             Table::TYPE_TEXT,
             50,
             [ 'nullable' => false, ],
             'Open Time'
         )->addColumn(
-            'Telephone',
+            'telephone',
             Table::TYPE_TEXT,
             255,
             [ 'nullable' => false, ],
             'Telephone'
         )->addColumn(
-            'Email',
+            'email',
             Table::TYPE_TEXT,
             255,
             [ 'nullable' => false, ],
             'Email'
+        )->addColumn(
+            'is_active',
+            Table::TYPE_SMALLINT,
+            null,
+            [ 'nullable' => false, 'default' => '1', ],
+            'Is Active'
         )->addColumn(
             'creation_time',
             Table::TYPE_TIMESTAMP,
@@ -87,12 +81,6 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
             null,
             [ 'nullable' => false, 'default' => Table::TIMESTAMP_INIT_UPDATE, ],
             'Modification Time'
-        )->addColumn(
-            'is_active',
-            Table::TYPE_SMALLINT,
-            null,
-            [ 'nullable' => false, 'default' => '1', ],
-            'Is Active'
         );
         $installer->getConnection()->createTable($table);
         //END   table setup

@@ -28,24 +28,21 @@ class ProductRepository
 
     function beforeGetList($subject, $result)
     {
-        $branchId;
+        $branchId = 0;
         foreach ($result->getFilterGroups() as $group) {
-            foreach ($group->getFilters() as $filter)
-            {
+            foreach ($group->getFilters() as $filter) {
                 $conditionType = $filter->getConditionType();
                 if ($filter->getField() == 'in_stores') {
                     $branchId = $filter->getValue();
+                    $this->setStoreCode($branchId);
                     $attribute = $this->eavConfig->getAttribute('catalog_product', 'in_stores');
                     $options = $attribute->getSource()->getAllOptions();
-                    foreach ($options as $option)
-                    {
-                        if($option['label'] == $branchId)
-                        {
+                    foreach ($options as $option) {
+                        if ($option['label'] == $branchId) {
                             $filter->setValue($option['value']);
                         }
                     }
-                }
-                else if($filter->getField() == 'barcode'){
+                } else if ($filter->getField() == 'barcode') {
                     $barcode = $filter->getValue();
                     $sku = $this->productResource->getProductByBarcode($barcode, $branchId);
                     $filter->setField('sku');
@@ -59,12 +56,8 @@ class ProductRepository
 
     function afterGetList($subject, $result)
     {
-        $searchProduct =  $this->restRequest->getParams();
-        $storeId = $searchProduct['branch_id'];
-
-        foreach ($result->getItems() as $product)
-        {
-            $this->setExtensionProductByStore($product, $storeId);
+        foreach ($result->getItems() as $product) {
+            $this->setExtensionProductByStore($product, $this->storeCode);
         }
 
         return $result;
@@ -72,13 +65,15 @@ class ProductRepository
 
     function afterGet($subject, $result)
     {
-        $requestParams =  $this->restRequest->getParams();
+        $requestParams = $this->restRequest->getParams();
         if (array_key_exists('branch_id', $requestParams)) {
-            $storeId = $searchProduct['branch_id'];
-            $this->setExtensionProductByStore($result, $storeId);
-            $this->setExtensionPromotionByProduct($result);
-        }
+            $storeId = $requestParams['branch_id'];
 
+        }else{
+            $storeId = '00099';
+        }
+        $this->setExtensionProductByStore($result, $storeId);
+        $this->setExtensionPromotionByProduct($result);
         return $result;
     }
 
@@ -99,12 +94,17 @@ class ProductRepository
     private function setExtensionPromotionByProduct($product)
     {
         $extensionAttributes = $product->getExtensionAttributes();
-        if(empty($extensionAttributes)){
+        if (empty($extensionAttributes)) {
             $extensionAttributes = $this->productExtensionFactory->create();
         }
         $promotion = $this->promotionresource->getPromotionByProduct($product['sku']);
         $extensionAttributes->setPromotion($promotion);
         $product->setExtensionAttributes($extensionAttributes);
         return $product;
+    }
+
+    function setStoreCode($storeCode)
+    {
+        $this->storeCode = $storeCode;
     }
 }
