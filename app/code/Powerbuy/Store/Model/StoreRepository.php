@@ -47,12 +47,12 @@ class StoreRepository implements \Powerbuy\Store\Api\StoreRepositoryInterface
          foreach ($allStore as $store)
          {
              $storeItem = [
-                 'store_code' => $store['StoreCode'],
-                 'name' => $store['Name'],
-                 'address' => $store['Address'],
-                 'open_time' => $store['OpenTime'],
-                 'telephone' => $store['Telephone'],
-                 'email' => $store['Email'],
+                 'store_code' => $store['store_code'],
+                 'name' => $store['name'],
+                 'address' => $store['address'],
+                 'open_time' => $store['open_time'],
+                 'telephone' => $store['telephone'],
+                 'email' => $store['email'],
                  'stock_available' => $store['stock_available']
              ];
              $result[] = $storeItem;
@@ -71,12 +71,12 @@ class StoreRepository implements \Powerbuy\Store\Api\StoreRepositoryInterface
          foreach ($allStore as $store)
          {
              $storeItem = [
-                 'store_code' => $store['StoreCode'],
-                 'name' => $store['Name'],
-                 'address' => $store['Address'],
-                 'open_time' => $store['OpenTime'],
-                 'telephone' => $store['Telephone'],
-                 'email' => $store['Email'],
+                 'store_code' => $store['store_code'],
+                 'name' => $store['name'],
+                 'address' => $store['address'],
+                 'open_time' => $store['open_time'],
+                 'telephone' => $store['telephone'],
+                 'email' => $store['email'],
              ];
              $result[] = $storeItem;
          }

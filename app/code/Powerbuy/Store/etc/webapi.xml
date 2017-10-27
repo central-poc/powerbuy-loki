@@ -15,7 +15,7 @@
         </resources>
     </route>
 
-    <route url="/V2/store/" method="GET">
+    <route url="/V2/stores/" method="GET">
         <service class="Powerbuy\Store\Api\StoreRepositoryInterface" method="getList"/>
         <resources>
             <resource ref="anonymous"/>
