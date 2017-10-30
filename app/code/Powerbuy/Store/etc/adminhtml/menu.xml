@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Powerbuy_Store::stores" resource="Powerbuy_Store::stores" title="Stores Master" action="powerbuy_store_stores/index/index" module="Powerbuy_Store" sortOrder="10"/>
-        <add id="Powerbuy_Store::stores_list" resource="Powerbuy_Store::stores" title="All Stores Master" action="powerbuy_store_stores/index/index" module="Powerbuy_Store" sortOrder="10" parent="Powerbuy_Store::stores" dependsOnModule="Powerbuy_Store"/>
+        <!--<add id="Powerbuy_Store::stores" resource="Powerbuy_Store::stores" title="Stores Master" action="powerbuy_store_stores/index/index" module="Powerbuy_Store" sortOrder="10"/>-->
+        <add id="Powerbuy_Store::stores_list" resource="Powerbuy_Store::stores" title="All Stores Master" action="powerbuy_store_stores/index/index" module="Powerbuy_Store" sortOrder="10" parent="Powerbuy_ProductMaster::productmasters" dependsOnModule="Powerbuy_Store"/>
     </menu>
 </config>
