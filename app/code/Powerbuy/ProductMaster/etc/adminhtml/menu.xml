@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add 
+            id="Powerbuy_ProductMaster::productmasters" 
+            resource="Powerbuy_ProductMaster::productmasters" 
+            title="Powerbuy" 
+            action="powerbuy_productmaster_productmasters/index/index" 
+            module="Powerbuy_ProductMaster" 
+            sortOrder="10"/>
+
+        <add 
+            id="Powerbuy_ProductMaster::productmasters_list" 
+            resource="Powerbuy_ProductMaster::productmasters" 
+            title="Product Master" 
+            action="powerbuy_productmaster_productmasters/index/index" 
+            module="Powerbuy_ProductMaster" 
+            sortOrder="10" 
+            parent="Powerbuy_ProductMaster::productmasters" 
+            dependsOnModule="Powerbuy_ProductMaster"/>
+
+    </menu>
+</config>
