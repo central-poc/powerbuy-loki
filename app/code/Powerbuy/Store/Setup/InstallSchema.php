@@ -46,6 +46,48 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
             [ 'nullable' => false, ],
             'Address'
         )->addColumn(
+            'villages',
+            Table::TYPE_TEXT,
+            255,
+            [ 'nullable' => false, ],
+            'Villages'
+        )->addColumn(
+            'home_no',
+            Table::TYPE_TEXT,
+            255,
+            [ 'nullable' => false, ],
+            'Home no'
+        )->addColumn(
+            'street',
+            Table::TYPE_TEXT,
+            255,
+            [ 'nullable' => false, ],
+            'Street'
+        )->addColumn(
+            'sub_district',
+            Table::TYPE_TEXT,
+            255,
+            [ 'nullable' => false, ],
+            'Sub-District Name'
+        )->addColumn(
+            'district',
+            Table::TYPE_TEXT,
+            255,
+            [ 'nullable' => false, ],
+            'District Name'
+        )->addColumn(
+            'province',
+            Table::TYPE_TEXT,
+            255,
+            [ 'nullable' => false, ],
+            'Province Name'
+        )->addColumn(
+            'postcode',
+            Table::TYPE_TEXT,
+            255,
+            [ 'nullable' => false, ],
+            'Postcode'
+        )->addColumn(
             'open_time',
             Table::TYPE_TEXT,
             50,

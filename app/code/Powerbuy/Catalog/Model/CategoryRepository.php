@@ -51,11 +51,17 @@ class CategoryRepository implements \Powerbuy\Catalog\Api\CategoryRepositoryInte
             $cate = $objectManager->create('Magento\Catalog\Model\Category')->load($category);
             if(!$cate->getIsActive() || $cate['include_in_menu'] == "0")
                 continue;
+
+            $imageUrl = "";
+            if($cate->getImageUrl() == "false")
+            {
+                $imageUrl = $cate->getImageUrl();
+            }
             $categoryItem = [
                 'entity_id' => $cate['entity_id'],
                 'level' => $cate['level'],
                 'name' => $cate['name'],
-                'image' => $cate->getImageUrl(),
+                'image' => $imageUrl,
                 'children' => $this->getChildrenCategoryByCate($cate)
             ];
             $result[] = $categoryItem;
@@ -75,11 +81,16 @@ class CategoryRepository implements \Powerbuy\Catalog\Api\CategoryRepositoryInte
         {
             foreach ($childrenCategories as $childrenCate)
             {
+                $imageUrl = "";
+                if($childrenCate->getImageUrl() == "false")
+                {
+                    $imageUrl = $childrenCate->getImageUrl();
+                }
                 $categoryItem = [
                     'entity_id' => $childrenCate['entity_id'],
                     'level' => $childrenCate['level'],
                     'name' => $childrenCate['name'],
-                    'image' => $childrenCate->getImageUrl(),
+                    'image' => $imageUrl,
                     'children' => $this->getChildrenCategoryByCate($childrenCate)
                 ];
                 $result[] = $categoryItem;
