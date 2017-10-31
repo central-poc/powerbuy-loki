@@ -46,6 +46,11 @@ class Validator
             }
             $options = $this->productAttributeRepository->get($attrCode)->getOptions();
             foreach ($options as $option) {
+                $label = $option->getLabel();
+                if (!is_string($label)) {
+                    $label = $label->getText();
+                }
+                $value = $option->getValue();
                 $attrParams['options'][strtolower($option->getLabel())] = $option->getValue();
             }
         }
