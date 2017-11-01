@@ -59,6 +59,9 @@ class Save extends \Magento\Backend\App\Action
                 $model->load($id);
             }
 
+            $data['address'] = $data['villages'] . ' ' . $data['home_no'] . ' ' . $data['street']
+                . ' ' . $data['sub_district'] . ' ' . $data['district']. ' ' . $data['province']. ' ' . $data['postcode'];
+
             $model->setData($data);
 
             try {

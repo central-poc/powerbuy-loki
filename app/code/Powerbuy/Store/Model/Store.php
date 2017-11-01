@@ -58,6 +58,76 @@ class Store extends AbstractModel implements StoreInterface, IdentityInterface
         return $this->setData(self::ADDRESS, $address);
     }
 
+    public function getVillages()
+    {
+        return $this->getData(self::VILLAGES);
+    }
+
+    public function setVillages($villages)
+    {
+        // TODO: Implement setVillages() method.
+    }
+
+    public function getHomeNo()
+    {
+        return $this->getData(self::HOME_NO);
+    }
+
+    public function setHomeNo($homeNo)
+    {
+        return $this->setData(self::HOME_NO, $homeNo);
+    }
+
+    public function getStreet()
+    {
+        return $this->getData(self::STREET);
+    }
+
+    public function setStreet($street)
+    {
+        return $this->setData(self::STREET, $street);
+    }
+
+    public function getSubDistrict()
+    {
+        return $this->getData(self::SUB_DISTRICT);
+    }
+
+    public function setSubDistrict($subDistrict)
+    {
+        return $this->setData(self::SUB_DISTRICT, $subDistrict);
+    }
+
+    public function getDistrict()
+    {
+        return $this->getData(self::DISTRICT);
+    }
+
+    public function setDistrict($district)
+    {
+        return $this->setData(self::DISTRICT, $district);
+    }
+
+    public function getProvince()
+    {
+        return $this->getData(self::PROVINCE);
+    }
+
+    public function setProvince($province)
+    {
+        return $this->setData(self::PROVINCE, $province);
+    }
+
+    public function getPostcode()
+    {
+        return $this->getData(self::POSTCODE);
+    }
+
+    public function setPostcode($postcode)
+    {
+        return $this->setData(self::POSTCODE, $postcode);
+    }
+
     public function getOpenTime()
     {
         return $this->getData(self::OPEN_TIME);
