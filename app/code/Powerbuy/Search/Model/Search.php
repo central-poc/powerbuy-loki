@@ -8,14 +8,17 @@
 
 namespace Powerbuy\Search\Model;
 
+use Magento\Catalog\Api\Data\ProductInterface;
+use Magento\Catalog\Api\Data\ProductSearchResultsInterfaceFactory;
+use Magento\Catalog\Model\ProductFactory;
+use Magento\Catalog\Model\ProductRepository;
 use Magento\Framework\Api\Search\SearchCriteriaInterface;
 use Magento\Framework\App\ScopeResolverInterface;
 use Magento\Framework\Search\Request\Builder;
+use Powerbuy\Catalog\Model\ResourceModel\Product;
 use Powerbuy\Search\Api\SearchInterface;
 use Magento\Framework\Search\SearchEngineInterface;
 use Magento\Framework\Search\SearchResponseBuilder;
-use Magento\Catalog\Api\ProductRepositoryInterface;
-
 
 class Search implements SearchInterface
 {
@@ -38,33 +41,65 @@ class Search implements SearchInterface
      * @var SearchResponseBuilder
      */
     private $searchResponseBuilder;
-
-    private $productRepo;
+    /**
+     * @var ProductSearchResultsInterfaceFactory
+     */
+    private $productSearchResultsInterfaceFactory;
+    /**
+     * @var ProductRepository
+     */
+    private $productRepository;
+    /**
+     * @var ProductFactory
+     */
+    private $productFactory;
+    /**
+     * @var ProductInterface
+     */
+    private $productInterface;
+    /**
+     * @var Product
+     */
+    private $productPWB;
 
     /**
      * @param Builder $requestBuilder
      * @param ScopeResolverInterface $scopeResolver
      * @param SearchEngineInterface $searchEngine
      * @param SearchResponseBuilder $searchResponseBuilder
+     * @param ProductSearchResultsInterfaceFactory $productSearchResultsInterfaceFactory
+     * @param ProductRepository $productRepository
+     * @param ProductFactory $productFactory
+     * @param ProductInterface $productInterface
+     * @param Product $productPWB
      */
     public function __construct(
         Builder $requestBuilder,
         ScopeResolverInterface $scopeResolver,
         SearchEngineInterface $searchEngine,
         SearchResponseBuilder $searchResponseBuilder,
-        ProductRepositoryInterface $productRepository
+
+        ProductSearchResultsInterfaceFactory $productSearchResultsInterfaceFactory,
+        ProductRepository $productRepository,
+        ProductFactory $productFactory,
+        ProductInterface $productInterface,
+        Product $productPWB
     ) {
         $this->requestBuilder = $requestBuilder;
         $this->scopeResolver = $scopeResolver;
         $this->searchEngine = $searchEngine;
         $this->searchResponseBuilder = $searchResponseBuilder;
-        $this->productRepo = $productRepository;
+        $this->productSearchResultsInterfaceFactory = $productSearchResultsInterfaceFactory;
+        $this->productRepository = $productRepository;
+        $this->productFactory = $productFactory;
+        $this->productInterface = $productInterface;
+        $this->productPWB = $productPWB;
     }
 
 
     /**
      * @param SearchCriteriaInterface $searchCriteria
-     * @return array
+     * @return \Magento\Catalog\Api\Data\ProductSearchResultsInterface
      */
     public function search(SearchCriteriaInterface $searchCriteria)
     {
@@ -83,25 +118,34 @@ class Search implements SearchInterface
         $this->requestBuilder->setSize($searchCriteria->getPageSize());
         $request = $this->requestBuilder->create();
         $searchResponse = $this->searchEngine->search($request);
-
         $response = $this->searchResponseBuilder->build($searchResponse);
 
-        $result = array();
+        $product_array = null;
 
-        if($response->getTotalCount() > 0) {
-            foreach ($response->getItems() as $item) {
-                $product = $this->productRepo->getById($item->getId());
-                $product_detail = [
-                    'sku' => $product->getSku(),
-                    'name' => $product->getName(),
-                    'extension_attributes' => $product->getExtensionAttributes(''),
-                    'custom_attributes' => $product->getCustomAttribute('image')
-                ];
-                $result[] = $product_detail;
-          }
+        if($response->getTotalCount() > 0)
+        {
+            foreach ($response->getItems() as $item)
+            {
+                $product = $this->productRepository->getById($item->getId());
+                $extensionAttributes = $product->getExtensionAttributes();
+                if (empty($extensionAttributes)) {
+                    $extensionAttributes = $this->productExtensionFactory->create();
+                }
+
+                $storeDetail = $this->productPWB->getProductByStore($product->getSku(), '00010');
+                $extensionAttributes->setByStore($storeDetail);
+                $product->setExtensionAttributes($extensionAttributes);
+
+                $product_array[] = $product;
+            }
         }
 
-        return $result;
+
+        $searchResult = $this->productSearchResultsInterfaceFactory->create();
+        $searchResult->setTotalCount($response->getTotalCount());
+        $searchResult->setItems($product_array);
+
+        return $searchResult;
     }
 
     /**

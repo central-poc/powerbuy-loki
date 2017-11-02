@@ -8,7 +8,7 @@ interface SearchInterface
 
     /**
      * @param SearchCriteriaInterface $searchCriteria
-     * @return array
+     * @return \Magento\Catalog\Api\Data\ProductSearchResultsInterface
      */
     public function search(SearchCriteriaInterface $searchCriteria);
 }
