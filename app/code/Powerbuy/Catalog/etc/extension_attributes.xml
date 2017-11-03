@@ -7,10 +7,10 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
     <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
-        <attribute code="description" type="Powerbuy\ProductMaster\Api\Data\ProductMasterInterface[]" />
+        <attribute code="description" type="Magento\Catalog\Api\Data\ProductAttributeTypeInterface[]" />
     </extension_attributes>
     <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
-        <attribute code="image" type="Powerbuy\ProductMaster\Api\Data\ProductMasterInterface[]" />
+        <attribute code="image" type="Magento\Catalog\Api\Data\ProductAttributeTypeInterface[]" />
     </extension_attributes>
     <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
         <attribute code="by_store" type="Powerbuy\ProductMaster\Api\Data\ProductMasterInterface[]" />
