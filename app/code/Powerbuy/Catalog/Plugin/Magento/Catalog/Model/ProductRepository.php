@@ -107,7 +107,12 @@ class ProductRepository
         if (empty($extensionAttributes)) {
             $extensionAttributes = $this->extensionFactory->create();
         }
-        $description = $product->getCustomAttribute('description');
+        $attr_description = $product->getCustomAttribute('description');
+        $description = '';
+        if($attr_description != null)
+        {
+            $description = $attr_description->getValue();
+        }
         $extensionAttributes->setDescription($description);
         $product->setExtensionAttributes($extensionAttributes);
         return $product;
@@ -119,8 +124,13 @@ class ProductRepository
         if (empty($extensionAttributes)) {
             $extensionAttributes = $this->extensionFactory->create();
         }
-        $image = $product->getCustomAttribute('image');
-        $extensionAttributes->setDescription($image);
+        $attr_image = $product->getCustomAttribute('image');
+        $image = '';
+        if($attr_image != null)
+        {
+            $image = $attr_image->getValue();
+        }
+        $extensionAttributes->setImage($image);
         $product->setExtensionAttributes($extensionAttributes);
         return $product;
     }
