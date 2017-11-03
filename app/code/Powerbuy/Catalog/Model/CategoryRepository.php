@@ -53,7 +53,7 @@ class CategoryRepository implements \Powerbuy\Catalog\Api\CategoryRepositoryInte
                 continue;
 
             $imageUrl = "";
-            if($cate->getImageUrl() == "false")
+            if($cate->getImageUrl() != "false")
             {
                 $imageUrl = $cate->getImageUrl();
             }
@@ -82,7 +82,7 @@ class CategoryRepository implements \Powerbuy\Catalog\Api\CategoryRepositoryInte
             foreach ($childrenCategories as $childrenCate)
             {
                 $imageUrl = "";
-                if($childrenCate->getImageUrl() == "false")
+                if($childrenCate->getImageUrl() != "false")
                 {
                     $imageUrl = $childrenCate->getImageUrl();
                 }

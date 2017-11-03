@@ -132,10 +132,28 @@ class Search implements SearchInterface
                     $extensionAttributes = $this->productExtensionFactory->create();
                 }
 
+                $attr_description = $product->getCustomAttribute('description');
+                $description = '';
+                if($attr_description != null)
+                {
+                    $description = $attr_description->getValue();
+                }
+                $extensionAttributes->setDescription($description);
+
+
+                $attr_image = $product->getCustomAttribute('image');
+                $image = '';
+                if($attr_image != null)
+                {
+                    $image = $attr_image->getValue();
+                }
+                $extensionAttributes->setImage($image);
+
+
                 $storeDetail = $this->productPWB->getProductByStore($product->getSku(), '00010');
                 $extensionAttributes->setByStore($storeDetail);
-                $product->setExtensionAttributes($extensionAttributes);
 
+                $product->setExtensionAttributes($extensionAttributes);
                 $product_array[] = $product;
             }
         }
