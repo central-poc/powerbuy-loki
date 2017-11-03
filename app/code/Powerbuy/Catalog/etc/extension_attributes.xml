@@ -7,9 +7,15 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
     <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
+        <attribute code="description" type="Powerbuy\ProductMaster\Api\Data\ProductMasterInterface[]" />
+    </extension_attributes>
+    <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
+        <attribute code="image" type="Powerbuy\ProductMaster\Api\Data\ProductMasterInterface[]" />
+    </extension_attributes>
+    <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
         <attribute code="by_store" type="Powerbuy\ProductMaster\Api\Data\ProductMasterInterface[]" />
     </extension_attributes>
     <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
-        <attribute code="Promotion" type="Powerbuy\Promotion\Api\Data\PromotionInterface[]" />
+        <attribute code="promotion" type="Powerbuy\Promotion\Api\Data\PromotionInterface[]" />
     </extension_attributes>
 </config>
