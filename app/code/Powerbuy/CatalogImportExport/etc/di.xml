@@ -18,7 +18,7 @@
     </virtualType>
     <!-- plugins -->
 
-    <type name="Magento\CatalogImportExport\Model\Import\Product\Validator">
+    <!--type name="Magento\CatalogImportExport\Model\Import\Product\Validator">
         <plugin name="powerbuy_catalogimportexport_magento_catalogimportexport_model_import_product_validator" type="Powerbuy\CatalogImportExport\Plugin\Magento\CatalogImportExport\Model\Import\Product\Validator"/>
-    </type>
+    </type-->
 </config>
