@@ -98,6 +98,7 @@ class ProductRepository
         $this->setExtensionProductImage($result);
         $this->setExtensionProductByStore($result, $storeId);
         $this->setExtensionPromotionByProduct($result);
+        $this->setExtensionPromotionPaymentByProduct($result);
         return $result;
     }
 
@@ -160,6 +161,36 @@ class ProductRepository
         $product->setExtensionAttributes($extensionAttributes);
         return $product;
     }
+
+    private function setExtensionPromotionPaymentByProduct(ProductInterface $product)
+    {
+        $extensionAttributes = $product->getExtensionAttributes();
+        if (empty($extensionAttributes)) {
+            $extensionAttributes = $this->extensionFactory->create();
+        }
+        $promotion = $this->promotionresource->getPromotionPaymentByProduct($product['sku']);
+        $extensionAttributes->setPayment($promotion);
+        $product->setExtensionAttributes($extensionAttributes);
+        return $product;
+    }
+
+//    private function setExtensionAttribute(ProductInterface $product)
+//    {
+//        $extensionAttributes = $product->getExtensionAttributes();
+//        if (empty($extensionAttributes)) {
+//            $extensionAttributes = $this->extensionFactory->create();
+//        }
+//        $attributes = $product->getCustomAttributes();
+//        $attribute_compare = null;
+//        foreach ($attributes as $attribute)
+//        {
+//            if($attribute->)
+//        }
+//
+//        $extensionAttributes->setPayment($attribute_compare);
+//        $product->setExtensionAttributes($extensionAttributes);
+//        return $product;
+//    }
 
     function setStoreCode($storeCode)
     {
