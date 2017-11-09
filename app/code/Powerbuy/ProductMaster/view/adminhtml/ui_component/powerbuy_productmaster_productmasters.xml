@@ -125,7 +125,7 @@
                 <!--</item>-->
             <!--</argument>-->
         <!--</column>-->
-        <column name="stock_available" class="Magento\Catalog\Ui\Component\Listing\Columns\Price">
+        <column name="stock_available">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="label" xsi:type="string">Stock Available</item>

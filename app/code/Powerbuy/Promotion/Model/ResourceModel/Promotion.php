@@ -24,6 +24,21 @@ class Promotion extends AbstractDb
             ->from($this->getMainTable())
             ->where('product_sku = ?', $sku)
             ->where('status = \'A\'')
+            ->where('promotion_type IN ( \'I\',\'O\',\'P\' )')
+            ->where('? BETWEEN start_date AND end_date', date("Y-m-d"))
+        ;
+        return $connection->fetchAll($select);
+    }
+
+    public function getPromotionPaymentByProduct($sku)
+    {
+        $connection = $this->getConnection();
+        $select = $connection
+            ->select()
+            ->from($this->getMainTable())
+            ->where('product_sku = ?', $sku)
+            ->where('status = \'A\'')
+            ->where('promotion_type IN ( \'B\' )')
             ->where('? BETWEEN start_date AND end_date', date("Y-m-d"))
         ;
         return $connection->fetchAll($select);
