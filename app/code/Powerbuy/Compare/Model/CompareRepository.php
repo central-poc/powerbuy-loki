@@ -77,14 +77,14 @@ class CompareRepository implements CompareRepositoryInterface
     {
         $requestParams = $this->request->getParams();
 
-        $products = $this->getProductList($requestParams['sku'], $requestParams['branch_id']);
+        //$products = $this->getProductList($requestParams['sku'], $requestParams['branch_id']);
 
         $skus_array = explode(',', $requestParams['sku']);
         $product_list = array();
         $spec_header = array();
-        foreach ($products->getItems() as $product)
+        foreach ($skus_array as $sku)
         {
-            //$product = $this->productRepository->get($sku);
+            $product = $this->productRepository->get($sku);
             $set_name = $this->setRepository->get($product->getAttributeSetId())->getAttributeSetName();
 
 
@@ -119,8 +119,7 @@ class CompareRepository implements CompareRepositoryInterface
         $spec_header = array_unique($spec_header, SORT_REGULAR);
 
 
-        $result = [
-            $products->getItems(),
+        $result[] = [
             "compare" => $this->getAttributeCompare($spec_header, $product_list)
         ];
 
@@ -159,11 +158,11 @@ class CompareRepository implements CompareRepositoryInterface
         foreach ($spec_header as $spec)
         {
 
-            $head = [
+            $result[] = [
                 "compare_header" => $spec['frontend_label'],
                 "compare_item" => $this->getValueAttribute($product_list ,$spec['attribute_code'])
             ];
-            $result[] = $head;
+            //$result[] = $head;
         }
         return $result;
     }
@@ -174,10 +173,10 @@ class CompareRepository implements CompareRepositoryInterface
 
         foreach ($product_list as $product)
         {
-            $value = [
+            $result[] = [
                 'detail' => $product->getCustomAttribute($attribute_code)
             ];
-            $result[] = $value;
+            //$result[] = $value;
         }
 
         return $result;
