@@ -173,10 +173,14 @@ class CompareRepository implements CompareRepositoryInterface
 
         foreach ($product_list as $product)
         {
-            $result[] = [
-                "detail" => $product->getCustomAttribute($attribute_code)
-            ];
-            //$result[] = $value;
+//            $result[] = [
+//                "detail" => $product->getCustomAttribute($attribute_code)
+//            ];
+            $attr =  $product->getCustomAttribute($attribute_code);
+            if($attr == null)
+                $result[] = "";
+            else
+                $result[] = $attr->getValue();
         }
 
         return $result;
