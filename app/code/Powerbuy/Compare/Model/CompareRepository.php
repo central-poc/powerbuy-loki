@@ -77,7 +77,7 @@ class CompareRepository implements CompareRepositoryInterface
     {
         $requestParams = $this->request->getParams();
 
-        $products = $this->getProductList($requestParams['sku']);
+        $products = $this->getProductList($requestParams['sku'], $requestParams['branch_id']);
 
         $skus_array = explode(',', $requestParams['sku']);
         $product_list = array();
@@ -131,7 +131,7 @@ class CompareRepository implements CompareRepositoryInterface
      * @param $skus
      * @return \Magento\Catalog\Api\Data\ProductSearchResultsInterface
      */
-    public function getProductList($skus)
+    public function getProductList($skus, $branch_id)
     {
         $filters = array();
         $filters[] = $this->filterBuilder
@@ -140,11 +140,11 @@ class CompareRepository implements CompareRepositoryInterface
             ->setConditionType("in")
             ->create();
 
-//        $filters[] = $this->filterBuilder
-//            ->setField('in_stores')
-//            ->setValue("00010")
-//            ->setConditionType("finset")
-//            ->create();
+        $filters[] = $this->filterBuilder
+            ->setField('in_stores')
+            ->setValue($branch_id)
+            ->setConditionType("finset")
+            ->create();
 
         $this->searchCriteriaBuilder->addFilters($filters);
 
