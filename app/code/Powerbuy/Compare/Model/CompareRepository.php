@@ -114,7 +114,7 @@ class CompareRepository implements CompareRepositoryInterface
                 ];
             }
 
-            //$product_list[] = $product;
+            $product_list[] = $product;
         }
         $spec_header = array_unique($spec_header, SORT_REGULAR);
 
@@ -174,7 +174,7 @@ class CompareRepository implements CompareRepositoryInterface
         foreach ($product_list as $product)
         {
             $result[] = [
-                'detail' => $product->getCustomAttribute($attribute_code)
+                "detail" => $product->getCustomAttribute($attribute_code)
             ];
             //$result[] = $value;
         }
