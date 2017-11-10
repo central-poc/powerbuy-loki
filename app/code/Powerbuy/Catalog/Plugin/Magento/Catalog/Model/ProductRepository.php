@@ -1,12 +1,18 @@
 <?php
+
 namespace Powerbuy\Catalog\Plugin\Magento\Catalog\Model;
 
 use Magento\Catalog\Api\Data\ProductExtensionFactory;
 use Magento\Catalog\Api\Data\ProductInterface;
-use Magento\Catalog\Api\Data\ProductSearchResultsInterface;
 use Magento\Eav\Model\Config;
-use Magento\Framework\Api\SearchCriteriaInterface;
+use Magento\Framework\Api\AttributeValueFactory;
 use Magento\Framework\Webapi\Rest\Request as RestRequest;
+use Magento\Catalog\Model\Product\Attribute\SetRepository;
+use Magento\Framework\Api\FilterBuilder;
+use Magento\Framework\Api\SearchCriteriaBuilder;
+use Magento\Catalog\Model\Product\Attribute\Repository;
+
+use Magento\TestFramework\Event\Magento;
 use Powerbuy\Catalog\Model\ResourceModel\Product as ProductResource;
 use Powerbuy\Promotion\Model\ResourceModel\Promotion as PromotionResource;
 
@@ -20,6 +26,10 @@ class ProductRepository
      * @var ProductExtensionFactory
      */
     private $extensionFactory;
+    /**
+     * @var AttributeValueFactory
+     */
+    private $attributeValueFactory;
 
     /**
      * ProductRepository constructor.
@@ -28,13 +38,23 @@ class ProductRepository
      * @param PromotionResource $promotionResource
      * @param Config $eavConfig
      * @param ProductExtensionFactory $extensionFactory
+     * @param SetRepository $setRepository
+     * @param FilterBuilder $filterBuilder
+     * @param SearchCriteriaBuilder $searchCriteriaBuilder
+     * @param Repository $repository
+     * @param AttributeValueFactory $attributeValueFactory
      */
     public function __construct(
         RestRequest $restRequest,
         ProductResource $productResource,
         PromotionResource $promotionResource,
         Config $eavConfig,
-        ProductExtensionFactory $extensionFactory
+        ProductExtensionFactory $extensionFactory,
+        SetRepository $setRepository,
+        FilterBuilder $filterBuilder,
+        SearchCriteriaBuilder $searchCriteriaBuilder,
+        Repository $repository,
+        AttributeValueFactory $attributeValueFactory
     )
     {
         $this->restRequest = $restRequest;
@@ -42,6 +62,11 @@ class ProductRepository
         $this->promotionresource = $promotionResource;
         $this->eavConfig = $eavConfig;
         $this->extensionFactory = $extensionFactory;
+        $this->setRepository = $setRepository;
+        $this->filterBuilder = $filterBuilder;
+        $this->searchCriteriaBuilder = $searchCriteriaBuilder;
+        $this->repository = $repository;
+        $this->attributeValueFactory = $attributeValueFactory;
     }
 
     
@@ -80,6 +105,7 @@ class ProductRepository
             $this->setExtensionProductDescription($product);
             $this->setExtensionProductImage($product);
             $this->setExtensionProductByStore($product, $this->storeCode);
+            $this->setExtensionBrand($product);
         }
 
         return $result;
@@ -99,6 +125,8 @@ class ProductRepository
         $this->setExtensionProductByStore($result, $storeId);
         $this->setExtensionPromotionByProduct($result);
         $this->setExtensionPromotionPaymentByProduct($result);
+        $this->setExtensionSpecifications($result);
+        $this->setExtensionBrand($result);
         return $result;
     }
 
@@ -174,23 +202,71 @@ class ProductRepository
         return $product;
     }
 
-//    private function setExtensionAttribute(ProductInterface $product)
-//    {
-//        $extensionAttributes = $product->getExtensionAttributes();
-//        if (empty($extensionAttributes)) {
-//            $extensionAttributes = $this->extensionFactory->create();
-//        }
-//        $attributes = $product->getCustomAttributes();
-//        $attribute_compare = null;
-//        foreach ($attributes as $attribute)
-//        {
-//            if($attribute->)
-//        }
-//
-//        $extensionAttributes->setPayment($attribute_compare);
-//        $product->setExtensionAttributes($extensionAttributes);
-//        return $product;
-//    }
+    private function setExtensionBrand(ProductInterface $product)
+    {
+        $extensionAttributes = $product->getExtensionAttributes();
+        if (empty($extensionAttributes)) {
+            $extensionAttributes = $this->extensionFactory->create();
+        }
+        $brand = $product->getCustomAttribute('brand')->getValue();
+        $extensionAttributes->setBrand($brand);
+        $product->setExtensionAttributes($extensionAttributes);
+        return $product;
+    }
+
+    /**
+     * @param ProductInterface $product
+     * @return ProductInterface
+     */
+    private function setExtensionSpecifications(ProductInterface $product)
+    {
+        $extensionAttributes = $product->getExtensionAttributes();
+        if (empty($extensionAttributes)) {
+            $extensionAttributes = $this->extensionFactory->create();
+        }
+
+        $set_name = $this->setRepository->get($product->getAttributeSetId())->getAttributeSetName();
+
+
+        $obj = \Magento\Framework\App\ObjectManager::getInstance();
+
+        /** @var \Magento\Catalog\Model\Config $config */
+        $config= $obj->get('Magento\Catalog\Model\Config');
+
+        $attributeGroupId = $config->getAttributeGroupId($product->getAttributeSetId(), $set_name);
+
+        $filters = array();
+        $filters[] = $this->filterBuilder
+            ->setField('attribute_group_id')
+            ->setValue($attributeGroupId)
+            ->create();
+        $this->searchCriteriaBuilder->addFilters($filters);
+
+        $searchCriteria = $this->searchCriteriaBuilder->create();
+        $searchResults = $this->repository->getList($searchCriteria);
+
+        $a[] = array();
+
+        $specifications = $searchResults->getItems();
+        foreach ($specifications as $specification)
+        {
+
+            $attribute_spec =$this->attributeValueFactory->create();
+            $attribute_spec->setAttributeCode($specification->getData("frontend_label"));
+            $attr_value = $product->getCustomAttribute($specification->getData('attribute_code'));
+            if($attr_value == null)
+                $attribute_spec->setValue("");
+            else
+                $attribute_spec->setValue($attr_value->getValue());
+
+            $a[] = $attribute_spec;
+        }
+
+
+        $extensionAttributes->setSpecifications($a);
+        $product->setExtensionAttributes($extensionAttributes);
+        return $product;
+    }
 
     function setStoreCode($storeCode)
     {

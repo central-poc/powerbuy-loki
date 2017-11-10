@@ -13,7 +13,13 @@
         <attribute code="image" type="string" />
     </extension_attributes>
     <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
+        <attribute code="brand" type="string" />
+    </extension_attributes>
+    <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
         <attribute code="by_store" type="Powerbuy\ProductMaster\Api\Data\ProductMasterInterface[]" />
+    </extension_attributes>
+    <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
+        <attribute code="specifications" type="Magento\Framework\Api\AttributeInterface[]" />
     </extension_attributes>
     <extension_attributes for="Magento\Catalog\Api\Data\ProductInterface">
         <attribute code="promotion" type="Powerbuy\Promotion\Api\Data\PromotionInterface[]" />
