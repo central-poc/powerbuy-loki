@@ -245,7 +245,7 @@ class ProductRepository
         $searchCriteria = $this->searchCriteriaBuilder->create();
         $searchResults = $this->repository->getList($searchCriteria);
 
-        $a[] = array();
+        $spec = array();
 
         $specifications = $searchResults->getItems();
         if($searchResults->getItems() != null) {
@@ -259,11 +259,11 @@ class ProductRepository
                 else
                     $attribute_spec->setValue($attr_value->getValue());
 
-                $a[] = $attribute_spec;
+                $spec[] = $attribute_spec;
             }
         }
 
-        $extensionAttributes->setSpecifications($a);
+        $extensionAttributes->setSpecifications($spec);
         $product->setExtensionAttributes($extensionAttributes);
         return $product;
     }
