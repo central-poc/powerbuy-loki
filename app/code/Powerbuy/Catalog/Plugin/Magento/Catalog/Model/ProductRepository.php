@@ -204,11 +204,28 @@ class ProductRepository
 
     private function setExtensionBrand(ProductInterface $product)
     {
+
+
+
         $extensionAttributes = $product->getExtensionAttributes();
         if (empty($extensionAttributes)) {
             $extensionAttributes = $this->extensionFactory->create();
         }
-        $brand = $product->getCustomAttribute('brand')->getValue();
+        if($product->getCustomAttribute('brand') == null)
+            $brand = "";
+        else
+            $brand = $product->getCustomAttribute('brand')->getValue();
+
+        $attribute_brand = $this->eavConfig->getAttribute('catalog_product', 'brand');
+        $options = $attribute_brand->getSource()->getAllOptions();
+        foreach ($options as $option) {
+            if ($option['value'] == $brand) {
+                $brand = $option['label'];
+                break;
+            }
+        }
+
+
         $extensionAttributes->setBrand($brand);
         $product->setExtensionAttributes($extensionAttributes);
         return $product;
