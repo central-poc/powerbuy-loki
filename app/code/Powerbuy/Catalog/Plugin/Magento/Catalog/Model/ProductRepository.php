@@ -248,20 +248,20 @@ class ProductRepository
         $a[] = array();
 
         $specifications = $searchResults->getItems();
-        foreach ($specifications as $specification)
-        {
+        if($searchResults->getItems() != null) {
+            foreach ($specifications as $specification) {
 
-            $attribute_spec =$this->attributeValueFactory->create();
-            $attribute_spec->setAttributeCode($specification->getData("frontend_label"));
-            $attr_value = $product->getCustomAttribute($specification->getData('attribute_code'));
-            if($attr_value == null)
-                $attribute_spec->setValue("");
-            else
-                $attribute_spec->setValue($attr_value->getValue());
+                $attribute_spec = $this->attributeValueFactory->create();
+                $attribute_spec->setAttributeCode($specification->getData("frontend_label"));
+                $attr_value = $product->getCustomAttribute($specification->getData('attribute_code'));
+                if ($attr_value == null)
+                    $attribute_spec->setValue("");
+                else
+                    $attribute_spec->setValue($attr_value->getValue());
 
-            $a[] = $attribute_spec;
+                $a[] = $attribute_spec;
+            }
         }
-
 
         $extensionAttributes->setSpecifications($a);
         $product->setExtensionAttributes($extensionAttributes);
