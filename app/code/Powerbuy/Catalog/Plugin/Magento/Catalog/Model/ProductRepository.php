@@ -211,20 +211,21 @@ class ProductRepository
         if (empty($extensionAttributes)) {
             $extensionAttributes = $this->extensionFactory->create();
         }
-        if($product->getCustomAttribute('brand') == null)
+        if($product->getCustomAttribute('brand') == null){
             $brand = "";
-        else
+        }
+        else {
             $brand = $product->getCustomAttribute('brand')->getValue();
 
-        $attribute_brand = $this->eavConfig->getAttribute('catalog_product', 'brand');
-        $options = $attribute_brand->getSource()->getAllOptions();
-        foreach ($options as $option) {
-            if ($option['value'] == $brand) {
-                $brand = $option['label'];
-                break;
+            $attribute_brand = $this->eavConfig->getAttribute('catalog_product', 'brand');
+            $options = $attribute_brand->getSource()->getAllOptions();
+            foreach ($options as $option) {
+                if ($option['value'] == $brand) {
+                    $brand = $option['label'];
+                    break;
+                }
             }
         }
-
 
         $extensionAttributes->setBrand($brand);
         $product->setExtensionAttributes($extensionAttributes);
