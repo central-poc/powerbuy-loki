@@ -140,7 +140,7 @@ class Search implements SearchInterface
                 }
                 $extensionAttributes->setDescription($description);
 
-
+                //Image
                 $attr_image = $product->getCustomAttribute('image');
                 $image = '';
                 if($attr_image != null)
@@ -152,6 +152,23 @@ class Search implements SearchInterface
 
                 $storeDetail = $this->productPWB->getProductByStore($product->getSku(), '00010');
                 $extensionAttributes->setByStore($storeDetail);
+
+                $atte_brand = $product->getCustomAttribute('brand');
+                $brand = '';
+                if($atte_brand != null)
+                {
+                    $brand = $product->getCustomAttribute('brand')->getValue();
+
+                    $attribute_brand = $this->eavConfig->getAttribute('catalog_product', 'brand');
+                    $options = $attribute_brand->getSource()->getAllOptions();
+                    foreach ($options as $option) {
+                        if ($option['value'] == $brand) {
+                            $brand = $option['label'];
+                            break;
+                        }
+                    }
+                }
+                $extensionAttributes->setBrand($brand);
 
                 $product->setExtensionAttributes($extensionAttributes);
                 $product_array[] = $product;
