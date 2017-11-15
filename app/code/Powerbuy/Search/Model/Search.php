@@ -178,7 +178,10 @@ class Search implements SearchInterface
 
         $searchResult = $this->productSearchResultsInterfaceFactory->create();
         $searchResult->setTotalCount($response->getTotalCount());
-        $searchResult->setItems($product_array);
+        if($product_array == null)
+            $searchResult->setItems([]);
+        else
+            $searchResult->setItems($product_array);
 
         return $searchResult;
     }
