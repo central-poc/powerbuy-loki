@@ -10,7 +10,10 @@ use Magento\Eav\Model\Entity\Attribute\Source\Table;
 use Powerbuy\ProductMaster\Model\Page;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Framework\Exception\LocalizedException;
-            
+use Powerbuy\ProductMaster\Helper\Attribute;
+use \Magento\Catalog\Api\ProductRepositoryInterface;
+use \Magento\Catalog\Model\ProductFactory;
+
 class Save extends \Magento\Backend\App\Action
 {
     /**
@@ -48,6 +51,12 @@ class Save extends \Magento\Backend\App\Action
      * @var Table
      */
     private $table;
+    /**
+     * @var Helper\Attribute
+     */
+    private $attributeHelper;
+
+    private $productFactory;
 
     /**
      * @param Action\Context $context
@@ -66,15 +75,20 @@ class Save extends \Magento\Backend\App\Action
         AttributeOptionManagementInterface $attributeOptionManagement,
         AttributeOptionInterface $attributeOption,
         AttributeOptionLabelInterface $attributeOptionLabel,
-        Table $table
+        Table $table,
+        Attribute $attributeHelper,
+        ProductFactory $productFactory
     ) {
         $this->dataPersistor = $dataPersistor;
         parent::__construct($context);
-        $this->attributeRepository = $attributeRepository;
+
+        $this->attributeRepository       = $attributeRepository;
         $this->attributeOptionManagement = $attributeOptionManagement;
-        $this->attributeOption = $attributeOption;
-        $this->attributeOptionLabel = $attributeOptionLabel;
-        $this->table = $table;
+        $this->attributeOption           = $attributeOption;
+        $this->attributeOptionLabel      = $attributeOptionLabel;
+        $this->table                     = $table;
+        $this->attributeHelper           = $attributeHelper;
+        $this->productFactory            = $productFactory;
     }
 
     /**
@@ -86,6 +100,7 @@ class Save extends \Magento\Backend\App\Action
     public function execute()
     {
         $data = $this->getRequest()->getPostValue();
+
         /** @var \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
         $resultRedirect = $this->resultRedirectFactory->create();
         $entityId = 'entity_id';
@@ -98,18 +113,24 @@ class Save extends \Magento\Backend\App\Action
             }
 
             /** @var Powerbuy\ProductMaster\Model\ProductMaster $model */
-            $model = $this->_objectManager->create('Powerbuy\ProductMaster\Model\ProductMaster');
+            $model   = $this->_objectManager->create('Powerbuy\ProductMaster\Model\ProductMaster');
+            $id      = $this->getRequest()->getParam($entityId);
+            $product = [];
 
-            $id = $this->getRequest()->getParam($entityId);
             if ($id) {
                 $model->load($id);
+                $product = $model->getData();
             }
 
             $model->setData($data);
 
             try {
                 $model->save();
-                $exist = $this->getOptionId('00010');
+                $data['store_id'] = $this->tranformStoreId($data['store_id']);
+                $this->attributeHelper->createOrGetId('in_stores', $data['store_id']);
+                $this->updateProduct($data, $product);
+
+                // $exist = $this->getOptionId('00010');
                 $this->messageManager->addSuccess(__('You saved the thing.'));
                 $this->dataPersistor->clear('powerbuy_productmaster_productmaster');
                 if ($this->getRequest()->getParam('back')) {
@@ -131,6 +152,7 @@ class Save extends \Magento\Backend\App\Action
     private function getOptionId($label)
     {
         $attribute = $this->attributeRepository->get('in_stores');
+
         if (!isset($this->attributeValues[ $attribute->getAttributeId() ])) {
             $this->attributeValues[ $attribute->getAttributeId() ] = [];
 
@@ -138,7 +160,7 @@ class Save extends \Magento\Backend\App\Action
             // referencing its _options cache. No other way to get it to pick up newly-added values.
 
             /** @var \Magento\Eav\Model\Entity\Attribute\Source\Table $sourceModel */
-            $sourceModel = $this->table->create();
+            $sourceModel = $this->table;
             $sourceModel->setAttribute($attribute);
 
             foreach ($sourceModel->getAllOptions() as $option) {
@@ -151,5 +173,45 @@ class Save extends \Magento\Backend\App\Action
             return $this->attributeValues[ $attribute->getAttributeId() ][ $label ];
         }
         return false;
+    }
+
+    private function updateProduct($data, $productMaster = [])
+    {
+        $product = $this->productFactory->create()->loadByAttribute('sku', $data['sku']);
+        $storeId = 0;
+
+        if(!empty($product)) {
+            $optionId = $this->attributeHelper->getOptionId('in_stores', $data['store_id']);
+
+            if(!empty($optionId)) {
+                $productAttrValues = explode(',', $product->getAttributeDefaultValue('in_stores'));
+
+                if(!empty($productMaster['store_id']))
+                {
+                    $masterStoreId     = $this->tranformStoreId($productMaster['store_id']);
+                    $masterOptionId    = $this->attributeHelper->getOptionId('in_stores', $masterStoreId);
+                    $productAttrValues = array_diff($productAttrValues, [$masterOptionId]);
+                }
+
+                if(!in_array($optionId, $productAttrValues))
+                {
+                    $productAttrValues[] = $optionId;
+                    $attrString          = implode(',', $productAttrValues);
+
+                    $product->setStoreId($storeId);
+                    $product->setData('in_stores', $attrString);
+
+                    return $product->getResource()->saveAttribute($product, 'in_stores');
+                }
+            }
+        }
+
+        return false;
+    }
+
+    private function tranformStoreId($storeId)
+    {
+        $defaultDigit = 5;
+        return strlen($storeId) < $defaultDigit ? sprintf('%05d', $storeId) : $storeId;
     }
 }
