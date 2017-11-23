@@ -122,8 +122,8 @@ class ProductMaster extends AbstractDb
      */
     public function validateDuplicate($object)
     {
-        $sku     = $object->getData('sku');
-        $storeId = $object->getData('store_id');
+        $sku     = $object->getSku();
+        $storeId = $object->getStoreId();
 
         if($entityId = $this->getIdByStoreIdAndSku($storeId, $sku)) {
             if($entityId !== $object->getData('entity_id')) {
