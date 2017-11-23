@@ -11,8 +11,8 @@ use Powerbuy\ProductMaster\Model\Page;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Framework\Exception\LocalizedException;
 use Powerbuy\ProductMaster\Helper\Attribute;
-use \Magento\Catalog\Api\ProductRepositoryInterface;
-use \Magento\Catalog\Model\ProductFactory;
+use Magento\Catalog\Api\ProductRepositoryInterface;
+use Magento\Catalog\Model\ProductFactory;
 
 class Save extends \Magento\Backend\App\Action
 {
@@ -126,11 +126,12 @@ class Save extends \Magento\Backend\App\Action
 
             try {
                 $model->save();
+
                 $data['store_id'] = $this->tranformStoreId($data['store_id']);
+
                 $this->attributeHelper->createOrGetId('in_stores', $data['store_id']);
                 $this->updateProduct($data, $product);
 
-                // $exist = $this->getOptionId('00010');
                 $this->messageManager->addSuccess(__('You saved the thing.'));
                 $this->dataPersistor->clear('powerbuy_productmaster_productmaster');
                 if ($this->getRequest()->getParam('back')) {
@@ -147,32 +148,6 @@ class Save extends \Magento\Backend\App\Action
             return $resultRedirect->setPath('*/*/edit', [$entityId => $this->getRequest()->getParam($entityId)]);
         }
         return $resultRedirect->setPath('*/*/');
-    }
-
-    private function getOptionId($label)
-    {
-        $attribute = $this->attributeRepository->get('in_stores');
-
-        if (!isset($this->attributeValues[ $attribute->getAttributeId() ])) {
-            $this->attributeValues[ $attribute->getAttributeId() ] = [];
-
-            // We have to generate a new sourceModel instance each time through to prevent it from
-            // referencing its _options cache. No other way to get it to pick up newly-added values.
-
-            /** @var \Magento\Eav\Model\Entity\Attribute\Source\Table $sourceModel */
-            $sourceModel = $this->table;
-            $sourceModel->setAttribute($attribute);
-
-            foreach ($sourceModel->getAllOptions() as $option) {
-                $this->attributeValues[ $attribute->getAttributeId() ][ $option['label'] ] = $option['value'];
-            }
-        }
-
-        // Return option ID if exists
-        if (isset($this->attributeValues[ $attribute->getAttributeId() ][ $label ])) {
-            return $this->attributeValues[ $attribute->getAttributeId() ][ $label ];
-        }
-        return false;
     }
 
     private function updateProduct($data, $productMaster = [])
