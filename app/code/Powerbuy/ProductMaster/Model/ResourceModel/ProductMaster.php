@@ -47,8 +47,14 @@ class ProductMaster extends AbstractDb
         }
 
         $object->setUpdateTime($this->date->gmtDate());
+        $this->validateDuplicate($object);
 
         return parent::_beforeSave($object);
+    }
+
+    protected function _afterSave(AbstractModel $object)
+    {
+        return parent::_afterSave($object);
     }
 
     /**
@@ -82,5 +88,51 @@ class ProductMaster extends AbstractDb
         return array_map(function($item) {
             return $item['store_id'];
         }, $items);
+    }
+
+    /**
+     * Get all storeId by sku
+     *
+     * @param string $storeId
+     * @param string $sku
+     * @return int|false
+     */
+    public function getStoreIdsBySku($sku)
+    {
+        $connection = $this->getConnection();
+
+        $select = $connection
+            ->select()
+            ->distinct()
+            ->from($this->getMainTable(), 'store_id')
+            ->where('sku = :sku');
+
+        $bind = [':sku' => (string)$sku];
+
+        return $connection->fetchCol($select, $bind);
+    }
+
+    /**
+     * Validate duplicate sku and store_id both
+     *
+     * @param \Magento\Framework\DataObject $object
+     *
+     * @return bool
+     * @throws \Magento\Framework\Exception\LocalizedException
+     */
+    public function validateDuplicate($object)
+    {
+        $sku     = $object->getData('sku');
+        $storeId = $object->getData('store_id');
+
+        if($entityId = $this->getIdByStoreIdAndSku($storeId, $sku)) {
+            if($entityId !== $object->getData('entity_id')) {
+                throw new \Magento\Framework\Exception\LocalizedException(
+                    __('This sku has been store "%1" already exists.', $storeId)
+                );
+            }
+        }
+
+        return true;
     }
 }
