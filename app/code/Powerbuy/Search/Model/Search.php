@@ -12,6 +12,7 @@ use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\Data\ProductSearchResultsInterfaceFactory;
 use Magento\Catalog\Model\ProductFactory;
 use Magento\Catalog\Model\ProductRepository;
+use Magento\Eav\Model\Config;
 use Magento\Framework\Api\Search\SearchCriteriaInterface;
 use Magento\Framework\App\ScopeResolverInterface;
 use Magento\Framework\Search\Request\Builder;
@@ -61,6 +62,10 @@ class Search implements SearchInterface
      * @var Product
      */
     private $productPWB;
+    /**
+     * @var Config
+     */
+    private $eavConfig;
 
     /**
      * @param Builder $requestBuilder
@@ -72,6 +77,7 @@ class Search implements SearchInterface
      * @param ProductFactory $productFactory
      * @param ProductInterface $productInterface
      * @param Product $productPWB
+     * @param Config $eavConfig
      */
     public function __construct(
         Builder $requestBuilder,
@@ -83,7 +89,8 @@ class Search implements SearchInterface
         ProductRepository $productRepository,
         ProductFactory $productFactory,
         ProductInterface $productInterface,
-        Product $productPWB
+        Product $productPWB,
+        Config $eavConfig
     ) {
         $this->requestBuilder = $requestBuilder;
         $this->scopeResolver = $scopeResolver;
@@ -94,6 +101,7 @@ class Search implements SearchInterface
         $this->productFactory = $productFactory;
         $this->productInterface = $productInterface;
         $this->productPWB = $productPWB;
+        $this->eavConfig = $eavConfig;
     }
 
 
@@ -174,7 +182,6 @@ class Search implements SearchInterface
                 $product_array[] = $product;
             }
         }
-
 
         $searchResult = $this->productSearchResultsInterfaceFactory->create();
         $searchResult->setTotalCount($response->getTotalCount());
