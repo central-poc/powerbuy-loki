@@ -158,7 +158,7 @@ class ProductRepository
         if($attr_image != null)
         {
             $image = $attr_image->getValue();
-            $image = "https://prod.powerbuy.co.th/media/catalog/product" + $image;
+            $image = "https://prod.powerbuy.co.th/media/catalog/product" . $image;
         }
         $extensionAttributes->setImage($image);
         $product->setExtensionAttributes($extensionAttributes);
