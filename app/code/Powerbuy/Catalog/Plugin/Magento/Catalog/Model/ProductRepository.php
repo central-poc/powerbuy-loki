@@ -107,12 +107,9 @@ class ProductRepository
             $this->setExtensionProductImage($product);
             $this->setExtensionProductByStore($product, $this->storeCode);
             $this->setExtensionBrand($product);
-            if($this->setSearchByBarcode)
-            {
-                $this->setExtensionPromotionByProduct($product);
-                $this->setExtensionPromotionPaymentByProduct($product);
-                $this->setExtensionSpecifications($product);
-            }
+            $this->setExtensionPromotionByProduct($product);
+            $this->setExtensionPromotionPaymentByProduct($product);
+            $this->setExtensionSpecifications($product);
         }
 
         return $result;
