@@ -88,6 +88,7 @@ class ProductRepository
                     }
                 } else if ($filter->getField() == 'barcode') {
                     $barcode = $filter->getValue();
+                    $this->setSearchByBarcode(true);
                     $sku = $this->productResource->getProductByBarcode($barcode, $branchId);
                     $filter->setField('sku');
                     $filter->setValue($sku['sku']);
@@ -106,6 +107,12 @@ class ProductRepository
             $this->setExtensionProductImage($product);
             $this->setExtensionProductByStore($product, $this->storeCode);
             $this->setExtensionBrand($product);
+            if($this->setSearchByBarcode)
+            {
+                $this->setExtensionPromotionByProduct($product);
+                $this->setExtensionPromotionPaymentByProduct($product);
+                $this->setExtensionSpecifications($product);
+            }
         }
 
         return $result;
@@ -158,7 +165,7 @@ class ProductRepository
         if($attr_image != null)
         {
             $image = $attr_image->getValue();
-            $image = "https://prod.powerbuy.co.th/media/catalog/product" . $image;
+            $image = "https://powerbuy.co.th/media/catalog/product" . $image;
         }
         $extensionAttributes->setImage($image);
         $product->setExtensionAttributes($extensionAttributes);
@@ -287,5 +294,10 @@ class ProductRepository
     function setStoreCode($storeCode)
     {
         $this->storeCode = $storeCode;
+    }
+
+    function setSearchByBarcode($isSearchByBarcode)
+    {
+        $this->isBarcode = $isSearchByBarcode;
     }
 }
