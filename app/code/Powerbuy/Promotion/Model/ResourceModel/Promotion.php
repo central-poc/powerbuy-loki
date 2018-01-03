@@ -46,10 +46,15 @@ class Promotion extends AbstractDb
 
     public function savePromotion($item)
     {
+//        $connection = $this->getConnection();
+//        $connection->insertMultiple($this->getMainTable(),$item);
         $connection = $this->getConnection();
-        //$connection->insert($this->getMainTable(),$item);
-        $connection->insertMultiple($this->getMainTable(),$item);
-        //$query = "INSERT INTO ";
+        $connection->insertOnDuplicate(
+            $this->getMainTable(),
+            $item,
+            ['promotion_name', 'promotion_type', 'start_date', 'end_date', 'status']
+        );
+        return $this;
     }
 
     public function deleteAll()

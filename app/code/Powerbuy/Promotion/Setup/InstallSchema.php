@@ -60,6 +60,12 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
             20,
             [ 'nullable' => false, ],
             'Product in promotion'
+        )->addColumn(
+            'store_id',
+            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+            5,
+            [ 'nullable' => false, ],
+            'Store Id'
         );
         $installer->getConnection()->createTable($table);
         //END   table setup

@@ -27,27 +27,28 @@ class PromotionFromPOS {
     public function execute()
     {
         $conn = $this->helper->ConnectDBInterface();
-        $query = 'EXECUTE dbo.sp_GetPromotionForTablet';
+        $query = 'EXEC dbo.GetPromoTablet';
         $result = sqlsrv_query($conn,$query);
 
         if(sqlsrv_has_rows($result))
         {
-            $this->resourcePromotion->deleteAll();
-            $item = array();
+            //$this->resourcePromotion->deleteAll();
+            //$item = array();
             while ($row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC))
             {
-                $item[] = [
+                $item = [
                     'promotion_num' => $row['PMNum'],
                     'promotion_name' => $row['PMName'],
                     'promotion_type' => $row['PMType'],
                     'start_date' => $row['SDATE']->format('Y-m-d'),
                     'end_date' => $row['EDATE']->format('Y-m-d'),
                     'status' => 'A',
-                    'product_sku' => $row['SKU']
+                    'product_sku' => $row['SKU'],
+                    'store_id' => $row['STCODE']
                 ];
-
+                $this->resourcePromotion->savePromotion($item);
             }
-            $this->resourcePromotion->savePromotion($item);
+           // $this->resourcePromotion->savePromotion($item);
         }
     }
 
