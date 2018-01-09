@@ -126,7 +126,7 @@ class PromotionRepository implements PromotionRepositoryInterface
                     'promotion_type' => $row['PMType'],
                     'start_date' => $row['SDATE']->format('Y-m-d'),
                     'end_date' => $row['EDATE']->format('Y-m-d'),
-                    'status' => 'A',
+                    'status' => $row['PMSTATUS'],
                     'product_sku' => $row['SKU'],
                     'store_id' => $row['STCODE']
                 ];

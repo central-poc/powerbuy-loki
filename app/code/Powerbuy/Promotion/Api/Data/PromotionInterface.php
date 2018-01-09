@@ -13,6 +13,7 @@ interface PromotionInterface extends ExtensibleDataInterface
     const END_DATE          = 'end_date';
     const STATUS            = 'status';
     const PRODUCT_SKU       = 'product_sku';
+    const STORE_ID          = 'store_id';
 
     public function getPromotionNum();
     public function  setPromotionNum($promoNum);
@@ -35,4 +36,6 @@ interface PromotionInterface extends ExtensibleDataInterface
     public function getProductSKU();
     public function  setProductSKU($sku);
 
+    public function getStoreId();
+    public function  setStoreId($storeId);
 }

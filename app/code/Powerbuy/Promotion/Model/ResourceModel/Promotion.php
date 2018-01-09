@@ -46,8 +46,6 @@ class Promotion extends AbstractDb
 
     public function savePromotion($item)
     {
-//        $connection = $this->getConnection();
-//        $connection->insertMultiple($this->getMainTable(),$item);
         $connection = $this->getConnection();
         $connection->insertOnDuplicate(
             $this->getMainTable(),

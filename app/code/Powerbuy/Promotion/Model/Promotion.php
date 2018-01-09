@@ -104,4 +104,14 @@ class Promotion extends AbstractModel implements PromotionInterface, IdentityInt
     {
         return $this->setData(self::PRODUCT_SKU, $sku);
     }
+
+    public function getStoreId()
+    {
+        return $this->getData(self::STORE_ID);
+    }
+
+    public function setStoreId($storeId)
+    {
+        return $this->setData(self::STORE_ID, $storeId);
+    }
 }
