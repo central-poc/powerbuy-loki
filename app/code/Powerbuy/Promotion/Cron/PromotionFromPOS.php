@@ -40,7 +40,7 @@ class PromotionFromPOS {
 
     public function execute()
     {
-        //$this->logger->debug('Cron Promotion,WORK!!! ');
+        $this->logger->info('Cron Promotion,WORK!!! ');
         $conn = $this->helper->ConnectDBInterface();
         $query = 'EXEC dbo.GetPromoTablet';
         $result = sqlsrv_query($conn,$query);
