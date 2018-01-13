@@ -83,4 +83,18 @@ class ProductMaster extends AbstractDb
             return $item['store_id'];
         }, $items);
     }
+
+    public function saveProductMultipleRow($item)
+    {
+        $connection = $this->getConnection();
+        $connection->insertMultiple($this->getMainTable(),$item);
+        return $this;
+    }
+
+    public function deleteAllByStore($storeId)
+    {
+        $connection = $this->getConnection();
+        $query = "DELETE FROM powerbuy_productmaster_productmaster WHERE store_id = " . $storeId;
+        $connection->query($query);
+    }
 }

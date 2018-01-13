@@ -40,7 +40,6 @@ class PromotionFromPOS {
 
     public function execute()
     {
-        $this->logger->info('Cron Promotion,WORK!!! ');
         $conn = $this->helper->ConnectDBInterface();
         $query = 'EXEC dbo.GetPromoTablet';
         $result = sqlsrv_query($conn,$query);
@@ -62,10 +61,7 @@ class PromotionFromPOS {
                 $this->resourcePromotion->savePromotion($item);
             }
         }
-        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/cron.log');
-        $logger = new \Zend\Log\Logger();
-        $logger->addWriter($writer);
-        $logger->info(__METHOD__);
+
         return $this;
     }
 

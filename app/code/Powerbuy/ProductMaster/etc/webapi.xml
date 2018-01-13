@@ -6,4 +6,10 @@
             <resource ref="Magento_Catalog::products" />
         </resources>
     </route>
+    <route url="/V1/updateproductmaster" method="GET">
+        <service class="Powerbuy\ProductMaster\Api\ProductMasterRepositoryInterface" method="saveProductFromInterface"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
 </routes>

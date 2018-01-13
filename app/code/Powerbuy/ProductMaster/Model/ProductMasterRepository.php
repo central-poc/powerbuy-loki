@@ -11,6 +11,7 @@ use Powerbuy\ProductMaster\Api\Data\ProductMasterInterface;
 use Powerbuy\ProductMaster\Api\ProductMasterRepositoryInterface;
 use Powerbuy\ProductMaster\Model\ResourceModel\ProductMaster;
 use Powerbuy\ProductMaster\Model\ResourceModel\ProductMaster\CollectionFactory;
+use Powerbuy\Promotion\Helpers\ConnectSql;
 
 class ProductMasterRepository implements ProductMasterRepositoryInterface
 {
@@ -28,17 +29,23 @@ class ProductMasterRepository implements ProductMasterRepositoryInterface
      * @var \Magento\Framework\Api\SearchResultsInterfaceFactory
      */
     private $searchResultsFactory;
+    /**
+     * @var ConnectSql
+     */
+    private $connectSql;
 
     public function __construct(
         ProductMaster $resourceModel,
         ProductMasterFactory $objectFactory,
         CollectionFactory $collectionFactory,
-        SearchResultsInterfaceFactory $searchResultsFactory       
+        SearchResultsInterfaceFactory $searchResultsFactory,
+        ConnectSql $connectSql
     ){
         $this->resourceModel = $resourceModel;
         $this->objectFactory = $objectFactory;
         $this->collectionFactory = $collectionFactory;
         $this->searchResultsFactory = $searchResultsFactory;
+        $this->connectSql = $connectSql;
     }
     
     public function save(ProductMasterInterface $object)
@@ -134,5 +141,45 @@ class ProductMasterRepository implements ProductMasterRepositoryInterface
     public function getStoreIds()
     {
         return $this->resourceModel->getStoreIds();
+    }
+
+    /**
+     * @return bool
+     */
+    public function saveProductFromInterface()
+    {
+        $conn = $this->connectSql->ConnectPWBLegacy();
+        $storesId = [
+            '00010','00011','00012','00027','00039','00096','00099','00131','00134','00171','00174','00991','00185'
+       ];
+
+        foreach ($storesId as $store)
+        {
+            $query = 'EXEC dbo.GetProductByStoreId @StoreId = \'' . $store .'\'' ;
+            $result = sqlsrv_query($conn,$query);
+            $item = array();
+            if(sqlsrv_has_rows($result))
+            {
+                while ($row = sqlsrv_fetch_array( $result, SQLSRV_FETCH_ASSOC))
+                {
+                    $item[] = [
+                        'sku' => $row['sku'],
+                        'store_id' => $row['store_id'],
+                        'barcode' => $row['barcode'],
+                        'price' => $row['price'],
+                        'special_price' => $row['special_price'],
+                        'special_price_from' => $row['special_price_from'] ? $row['special_price_from']->format('Y-m-d') : $row['special_price_from'],
+                        'special_price_to' => $row['special_price_to'] ? $row['special_price_to']->format('Y-m-d') : $row['special_price_to'],
+                        'stock_available' => $row['stock_available'],
+                        'stock_on_hand' => $row['stock_on_hand']
+                    ];
+
+                }
+                $this->resourceModel->deleteAllByStore($store);
+
+                $this->resourceModel->saveProductMultipleRow($item);
+            }
+        }
+        return true;
     }
 }

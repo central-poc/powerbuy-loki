@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
     <group id="custom_crongroup">
         <job name="custom_cron_job" instance="Powerbuy\ProductMaster\Cron\UpdateProduct" method="execute">
-            <schedule>* * * * *</schedule>
+            <schedule>30 * * * *</schedule>
         </job>
     </group>
 </config>

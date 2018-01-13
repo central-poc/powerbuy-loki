@@ -8,23 +8,51 @@
 
 namespace Powerbuy\ProductMaster\Cron;
 
+use Powerbuy\ProductMaster\Api\ProductMasterRepositoryInterface;
+use Powerbuy\ProductMaster\Model\ResourceModel\ProductMaster as ProductResource;
+use Powerbuy\Promotion\Helpers\ConnectSql;
 use \Psr\Log\LoggerInterface;
 
 class UpdateProduct {
     protected $logger;
-
-    public function __construct(LoggerInterface $logger) {
-        $this->logger = $logger;
-    }
+    /**
+     * @var ProductResource
+     */
+    private $productMasterResource;
+    /**
+     * @var ConnectSql
+     */
+    private $connectSql;
+    /**
+     * @var ProductMasterRepositoryInterface
+     */
+    private $productMasterRepositoryInterface;
 
     /**
-     * Write to system.log
-     *
-     * @return void
+     * UpdateProduct constructor.
+     * @param LoggerInterface $logger
+     * @param ConnectSql $connectSql
+     * @param ProductResource $productMasterResource
+     * @param ProductMasterRepositoryInterface $productMasterRepoInterface
      */
+    public function __construct(
+        LoggerInterface $logger,
+        ConnectSql $connectSql,
+        ProductResource $productMasterResource,
+        ProductMasterRepositoryInterface $productMasterRepoInterface
+    ) {
+        $this->logger = $logger;
+        $this->productMasterResource = $productMasterResource;
+        $this->connectSql = $connectSql;
+        $this->productMasterRepositoryInterface = $productMasterRepoInterface;
+    }
+
+
 
     public function execute() {
-        $this->logger->info('Cron Product Master Works');
+
+        $this->productMasterRepositoryInterface->saveProductFromInterface();
+        return true;
     }
 
 }

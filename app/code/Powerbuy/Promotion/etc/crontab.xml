@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
-    <group id="mr_cron">
+    <group id="custom_crongroup">
         <job name="promotion_cron" instance="Powerbuy\Promotion\Cron\PromotionFromPOS" method="execute">
             <schedule>30 8 * * *</schedule>
         </job>
